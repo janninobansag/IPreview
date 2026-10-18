@@ -1,0 +1,54 @@
+:root[data-theme='dark'] .quiz-menu-toggle {
+  color: #bdcbd3;
+  border-color: #43535e;
+}
+:root[data-theme='dark'] .quiz-menu-toggle:hover,
+:root[data-theme='dark'] .quiz-menu-toggle[aria-expanded='true'] {
+  color: var(--ink);
+  background: #243640;
+}
+:root[data-theme='dark'] .quiz-menu-panel {
+  border-color: #43535e;
+}
+:root[data-theme='dark'] .quiz-menu-panel a[aria-current='page'] {
+  color: #8ee5d7;
+  background: #1b3c3a;
+  border-color: #498e85;
+}
+:root[data-theme='dark'] .note-card a {
+  color: #8ee5d7;
+}
+@media (max-width: 680px) {
+  .quiz-menu-toggle {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  .quiz-menu-panel a {
+    min-height: 48px;
+    font-size: 16px;
+  }
+  .active-quiz-label strong {
+    font-size: 13px;
+  }
+  .source-question summary {
+    padding: 10px;
+  }
+  .source-images {
+    padding: 4px;
+  }
+  .solution-equation {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .solution-steps {
+    font-size: 15px;
+  }
+  .submit-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .submit-row .button {
+    min-height: 48px;
+  }
+}

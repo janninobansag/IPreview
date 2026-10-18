@@ -1,0 +1,100 @@
+Read the signal at each of the five sampling times and round each sample to its nearest quantization level. Option B produces the sequence 01, 00, 10, 11, 01 in that order.
+The output is 1 only in the row where both inputs are 1. That is the defining truth table of the AND operation.
+Unicode assigns character codes across many languages and symbol sets within one standard. It is designed for representing multilingual text consistently.
+There are five choices for chairperson and, because one person may hold both roles, five independent choices for secretary. The total is 5 × 5 = 25.
+The first condition has already handled scores of 80 or above. Checking score ≥ 65 next therefore selects exactly the remaining scores from 65 through 79.
+Start at x = 2 and y = 3. The first cycle makes y = 2 and x = 4. The second makes y = 1 and x = 5, and the procedure then stops.
+From state 1, 11 mod 3 = 2, so move two states clockwise to state 3. Then 33 mod 3 = 0, so move one state clockwise to state 4.
+The device is a stack and removes its top item first. To remove C first, A and B must already be underneath it; B must then leave before A. Therefore C, A, B cannot be produced.
+Save the first element, then copy each later element into the preceding position using index i − 1. Finally place the saved first element in the last array position.
+An address uniquely identifies a memory location. The processor uses addresses to locate stored instructions and data.
+HDMI carries digital video and audio, along with supported control signals, through one connection. It is a common interface for audiovisual devices.
+A GPU is designed to process many graphics-related operations efficiently. It can accelerate tasks such as rendering three-dimensional images.
+The BIOS or firmware performs the initial startup work before the operating system and applications are loaded. It is the earliest of the listed startup stages.
+Fault tolerance is the ability to continue operating when a component fails. It often relies on redundancy and a way to detect and isolate faults.
+The system's total cost of ownership includes its hardware and software maintenance costs. Purchasing and shipping the merchandise sold by the business are product costs, rather than ownership costs of the sales management system.
+Clustering makes multiple computers cooperate as a system. This can improve service availability and distribute large processing workloads.
+Each '..' moves up one directory. Move up twice from the marked current directory, then follow DIRB and Fn.txt. In the diagram, that path reaches the file marked (4).
+Open source software is still subject to license terms. Different open source licenses impose different conditions on use, modification and redistribution.
+Activation verifies that a software installation is being used under a valid license, often using a product identifier and device information. Its purpose includes reducing unauthorized use.
+The sales reference C2 must change when copied to another branch or month. The average must always use columns C through E while allowing the row to change, so use AVERAGE($C2:$E2). A below-average value produces X; otherwise it produces O.
+Function keys have actions assigned by the operating system or the current application. The action of a key can therefore vary between programs.
+Secure boot verifies trusted digital signatures before running boot software. Rejecting software that fails verification helps prevent execution of tampered firmware or operating system components.
+A smart meter measures consumption and sends the readings over a communications network. This enables automatic reporting of electricity or gas usage.
+A shared stylesheet defines presentation rules that multiple pages can reuse. Changing those shared rules makes it easier to maintain a consistent appearance across the website.
+The uncompressed 5 × 5 image contains 25 pixel characters. Applying the specified run-length rule produces 13 characters. The compression ratio is 13 ÷ 25 × 100 = 52.0%.
+Sales amounts, dates, customers and product identifiers support the customer purchase list and product sales ranking. There is no inventory or stockout history, so the out-of-stock list cannot be produced from these tables alone.
+An entity-relationship diagram models entities and the relationships between them. The relational tables are then designed using that model.
+Projection chooses columns, selection chooses rows, and a join combines related tables. Match these definitions to operations I, II and III respectively.
+Commit confirms a successfully completed transaction's updates in the database. Rollback is the operation used to undo uncommitted work instead.
+BCC hides the listed recipients' addresses from the other recipients. It is the appropriate field when the recipient list must not be disclosed.
+Online storage capacity is supplied by the remote storage service and its plan. Adding local disk space to a device does not automatically increase that remote allocation.
+Cookies can contain session identifiers. If an attacker steals a usable session cookie, the attacker may impersonate the logged-in user and hijack the account.
+In srv01.itpec.org, itpec.org is the domain and srv01 identifies the host within it. The remaining /abc.html portion identifies the requested resource path.
+IPv6 uses 128-bit addresses, compared with IPv4's 32-bit addresses. Its much larger address space supports large numbers of connected devices.
+A zero-day attack exploits a vulnerability before a corrective measure or patch is available to users. The absence of a publicly available countermeasure is the key clue.
+A password-protected screen lock makes unauthorized access to a lost or unattended smartphone harder. It is an appropriate basic protection for stored information.
+Risk avoidance stops the activity that creates the risk. Withdrawing from a high-risk service avoids that particular exposure rather than merely accepting or reducing it.
+An HTTPS URL indicates HTTP communication protected using TLS. Its prefix is https://.
+A digital signature can be verified to detect changes to signed data and authenticate the signing key's holder. Changes invalidate the signature verification result.
+Security patches remove known weaknesses, and user education reduces unsafe behavior. Disk striping is a storage technique and does not by itself prevent virus infection.
+Phishing impersonates a trusted organization to deceive users into disclosing information. The fake financial-institution email and password-collecting website fit that pattern.
+Behavioral detection looks for suspicious program activity rather than relying only on known malware signatures. It can help detect previously unknown threats.
+Single sign-on lets a user access multiple participating services after one authentication. Its main user benefit is reduced repeated sign-in work.
+A VPN creates a logical private connection over a shared network. It does not inherently replace wireless access points or perform a device security inspection, so only statement B is a general VPN feature.
+A backdoor is a hidden or unauthorized access route that bypasses normal controls. Attackers may install one to make future access easier.
+Redundant hardware can allow a second component to continue service when the first fails. This supports availability and the objective of continuous operation.
+The detailed software design tells the programmer how to implement the software. Coding is the development activity that follows that design output.
+White-box testing uses knowledge of a program's internal structure and logic. Analyzing internal processing paths matches that technique.
+An implementation plan should be created and agreed upon before installation. Statement D follows that sequence for a production-system change; the others obtain agreement too late or omit planning.
+DevOps brings development and operations together and uses automation to improve releases and operation. The described cooperative work and automated transition fit DevOps.
+Scope management defines the deliverables and the work required to produce them. It controls what is included in the project.
+The waterfall model organizes development into sequential stages. Later stages use outputs produced and approved in earlier stages.
+The number of identified bugs is a defect-related quality measure. It provides information about program quality when interpreted with factors such as size and test coverage.
+A requested addition should go through change management. The manager assesses effects on cost, schedule and other commitments before deciding how to handle the change.
+A master schedule summarizes the major activities and deliverables across the complete project. It provides an overall timeline rather than every detailed task.
+A WBS identifies and organizes project work and deliverables. Breaking the work into manageable pieces provides a basis for estimating effort in person-days.
+Stakeholders include people or organizations that affect or are affected by the project. All four groups listed have an interest in or contribution to the system development project.
+IT service management includes setting service targets, measuring actual performance and improving the service. The availability planning and monitoring activity follows that approach.
+Service level management maintains and improves agreed service levels. It monitors actual performance against an SLA and reviews the results.
+Facility management includes ensuring that the physical environment can support the information system. A workable fuel replenishment plan helps keep backup generation available for the required period.
+An AI chatbot handles a conversation with the user and provides automated responses or recommendations. The interactive product recommendation example matches that function.
+A service guarantee describes conditions such as availability and continuity rather than its feature list. Being usable 24 hours a day, every day, is an availability commitment.
+A system audit examines information systems and activities related to their use and control. Activities entirely unrelated to information systems are outside that particular audit's scope.
+Segregation of duties divides responsibilities so that employees can check one another's work. It reduces opportunities for unchecked errors and misconduct.
+Controls over financial reporting involve every function whose activities affect the reports. Sales transactions, accounting and the supporting IT systems all contribute to that process.
+The chief financial officer, or CFO, has responsibility for financial management. Finance is therefore the relevant scope.
+For C → A → B, machine X finishes at minutes 6, 14 and 24. Machine Y finishes the same jobs at minutes 14, 24 and 29. Comparing the allowed schedules shows this order gives the minimum total time of 29 minutes.
+Each box has five dumplings, each dumpling uses 20 g of stuffing, and meat is 60% of the stuffing. For 100 boxes, meat needed is 100 × 5 × 20 × 0.60 = 6,000 g.
+ROE means return on equity. It relates the company's earnings to the shareholders' equity used to generate them.
+HR Tech applies digital technology to human resources activities such as recruiting, evaluation and personnel management. The described use of AI and IoT in personnel work fits that term.
+The chief information officer, or CIO, is responsible for information systems direction and its alignment with business strategy.
+Total capital turnover compares sales with the capital used to produce them. It indicates how efficiently capital is being used to generate revenue.
+A non-disclosure agreement sets obligations to protect confidential information learned during a business relationship. The development contract's confidentiality obligations are an NDA example.
+Outside directors can provide more independent monitoring of management decisions. This helps strengthen corporate governance and oversight.
+ISO 14001 specifies requirements for environmental management systems. It is the environmental standard among the options.
+Putting multiple customers' addresses in CC reveals those addresses to the other recipients. That disclosure is inappropriate when it is not authorized or necessary for the response.
+Compliance education teaches employees the laws and internal rules that apply to their work. This directly supports compliance with those requirements.
+The International Telecommunication Union, or ITU, works on international telecommunications standards. The field named in option D matches the organization's role.
+The portfolio matrix uses market growth rate and relative market share. Their combination distinguishes stars, cash cows, question marks and dogs.
+Knowledge management captures, shares and reuses organizational experience and expertise. Documenting experienced employees' know-how for later use is a direct example.
+Customer relationship management relies on information about customers and their interactions with the company. Customer records and purchasing history support that relationship management.
+Value engineering examines function in relation to cost. It seeks to improve the value delivered by providing the required function more effectively or at lower cost.
+Benchmarking compares the organization's performance, products or practices with strong examples elsewhere. The comparison helps identify improvement opportunities.
+The goal is more concluded contracts, so that is the KGI. The number of proposals is an activity measure that helps track progress toward that goal, so it is the KPI.
+A patent portfolio is the collection of patents and applications managed by an organization. Analyzing the collection helps connect intellectual property with business and technology strategy.
+Material requirements planning calculates what materials are needed, in what quantities and when. It addresses production problems caused by missing or inaccurate material requirements information.
+A banner advertisement is a clickable advertisement displayed within a webpage. Selecting it takes the user to the advertiser's destination page.
+A scanner captures a paper document or drawing as digital image data. It is the appropriate device for converting existing paper material into files.
+Computer-aided design uses computers to create or modify designs and drawings. Architectural and industrial product design are common applications.
+A wearable device is worn on the body. A smartwatch collecting health measurements is a suitable example of wearable-device use.
+Learning from past conversations and generating context-appropriate responses uses artificial intelligence. The automatic chat response system described is an AI application.
+Anti-money laundering measures seek to detect and prevent attempts to disguise illegally obtained funds as legitimate income. That matches the activity in the question.
+Groupware provides shared communication, information and scheduling tools for teams. Its purpose is to support collaboration.
+A data flow diagram models how data is exchanged and processed between business activities. It is suited to analysis focused on data movement.
+E-learning can allow learners to study at a suitable time using available free time. This flexibility is useful for staff spread across multiple locations.
+A smart city uses information and communication technology to improve urban or regional services and address local problems. The community-development initiative fits that concept.
+Requirements definition clarifies the intended business functions and what will be computerized. This establishes the scope and functionality needed from the system.
+The Internet of Things connects physical devices, sensors and controllers so they can exchange information. The description in option B captures that connection.
+Digital transformation uses digital technology to reshape business activities and business models and create new value. The strategic overhaul described is a DX initiative.
+A request for proposal communicates the customer's objectives and system requirements to potential suppliers. It invites vendors to propose a suitable solution and bid.

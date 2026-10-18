@@ -1,0 +1,138 @@
+.note-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 30px;
+  background: #eaf0f3;
+  border-radius: 9px;
+  padding: 14px 17px;
+  color: #687780;
+}
+.note-icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  border: 1px solid #9fb0ba;
+  color: #70838e;
+  font-size: 12px;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+.note-card p {
+  font-size: 10px;
+  line-height: 1.55;
+  margin: 0;
+  flex: 1;
+}
+.note-card strong {
+  color: var(--ink);
+}
+.note-side {
+  white-space: nowrap;
+  font-size: 9px;
+  color: #84919a;
+}
+footer {
+  border-top: 1px solid var(--line);
+  padding: 16px 0 22px;
+  display: flex;
+  justify-content: space-between;
+  color: #8d99a1;
+  font-size: 9px;
+}
+.results-panel {
+  margin-top: 22px;
+  padding: 22px;
+  background: var(--paper);
+  border: 1px solid #e5eaed;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.result-heading {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edf0f2;
+}
+.result-score {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+  display: grid;
+  place-items: center;
+  background: var(--pale-teal);
+  color: var(--teal-dark);
+  border-radius: 50%;
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+.result-heading h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 19px;
+  margin: 4px 0;
+  letter-spacing: -0.04em;
+}
+.result-heading p {
+  font-size: 11px;
+  color: #7a8992;
+  margin: 0;
+}
+.result-actions {
+  display: flex;
+  gap: 8px;
+  padding: 13px 0;
+  flex-wrap: wrap;
+}
+.result-actions .button {
+  min-height: 35px;
+  font-size: 10px;
+}
+.review-list {
+  display: grid;
+  gap: 9px;
+}
+.review-item {
+  border: 1px solid #e7ecee;
+  border-radius: 7px;
+  padding: 12px;
+}
+.review-item.is-correct {
+  border-left: 3px solid #46ab80;
+}
+.review-item.is-wrong {
+  border-left: 3px solid #df8580;
+}
+.review-item h3 {
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0 0 7px;
+}
+.review-answer,
+.review-explanation {
+  font-size: 10px;
+  line-height: 1.55;
+  color: #74828c;
+  margin: 3px 0 0;
+}
+.review-answer strong {
+  color: var(--ink);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+[hidden] {
+  display: none !important;
+}

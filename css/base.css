@@ -1,0 +1,118 @@
+:root {
+  --ink: #182b3d;
+  --muted: #6f7c88;
+  --line: #dfe5e9;
+  --canvas: #f4f6f8;
+  --paper: #fff;
+  --teal: #16a394;
+  --teal-dark: #087f75;
+  --pale-teal: #e6f6f3;
+  --soft-blue: #edf3f8;
+  --viz-line: #afbec7;
+  --viz-box: #fff;
+  --shadow: 0 14px 44px rgba(25, 46, 63, 0.055);
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--canvas);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--canvas);
+}
+button,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+.app-shell {
+  max-width: 1240px;
+  padding: 0 42px;
+  margin: 0 auto;
+}
+.topbar {
+  height: 77px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand-light {
+  color: #78909e;
+  font-weight: 600;
+}
+.brand-mark {
+  display: grid;
+  grid-template-columns: repeat(2, 7px);
+  gap: 3px;
+  width: 19px;
+  transform: rotate(-4deg);
+}
+.brand-mark span {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--teal);
+}
+.brand-mark span:nth-child(2),
+.brand-mark span:nth-child(3) {
+  opacity: 0.48;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.theme-toggle {
+  min-height: 36px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #d9e0e5;
+  border-radius: 8px;
+  background: transparent;
+  color: #687985;
+  font-size: 10px;
+  font-weight: 700;
+}
+.theme-toggle:hover {
+  background: white;
+  color: var(--ink);
+  border-color: #b9c6cd;
+}
+.theme-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+.save-state {
+  font-size: 12px;
+  color: #75828c;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.save-dot {
+  height: 7px;
+  width: 7px;
+  background: var(--teal);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #e0f2ee;
+}

@@ -1,0 +1,148 @@
+@media (max-width: 980px) {
+  .app-shell {
+    padding: 0 24px;
+  }
+  .quiz-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .quiz-column,
+  .navigator-card {
+    width: 100%;
+  }
+  .navigator-card {
+    order: 2;
+  }
+  .question-card {
+    padding: 24px 22px 18px;
+  }
+  .navigator-card {
+    padding: 18px 20px;
+  }
+  .question-grid {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+  .note-side {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .app-shell {
+    padding: 0 16px;
+  }
+  .topbar {
+    height: 63px;
+  }
+  .brand {
+    font-size: 17px;
+  }
+  .save-state {
+    display: none;
+  }
+  .topbar-right {
+    gap: 0;
+  }
+  .topbar .button {
+    min-height: 35px;
+    font-size: 10px;
+  }
+  .theme-label {
+    display: none;
+  }
+  .theme-toggle {
+    margin-right: 7px;
+    width: 36px;
+    justify-content: center;
+    padding: 0;
+  }
+  main {
+    padding-top: 30px;
+  }
+  .intro {
+    margin-bottom: 24px;
+  }
+  .intro-copy {
+    font-size: 13px;
+  }
+  .intro-meta {
+    gap: 12px;
+  }
+  .intro-meta span {
+    font-size: 9px;
+  }
+  .quiz-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .quiz-column,
+  .navigator-card {
+    width: 100%;
+  }
+  .quiz-toolbar {
+    align-items: end;
+  }
+  .progress-info {
+    display: grid;
+    gap: 2px;
+    text-align: right;
+  }
+  .question-card {
+    min-height: 0;
+    padding: 21px 17px 16px;
+  }
+  .question-card h2 {
+    margin-bottom: 17px;
+  }
+  .question-footer {
+    padding-top: 19px;
+  }
+  .autosave-note {
+    display: none;
+  }
+  .navigator-card {
+    order: 2;
+  }
+  .question-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .topic-breakdown {
+    grid-template-columns: 1fr 1fr;
+  }
+  .topic-breakdown > .eyebrow {
+    grid-column: 1/-1;
+  }
+  .submit-row {
+    align-items: flex-start;
+  }
+  .submit-row .button {
+    flex: 0 0 auto;
+  }
+  .note-card {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .app-shell {
+    padding: 0 12px;
+  }
+  .eyebrow {
+    font-size: 8px;
+  }
+  .question-card {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .question-footer .button {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .submit-row {
+    display: grid;
+  }
+  .submit-row .button {
+    width: 100%;
+  }
+  .question-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}

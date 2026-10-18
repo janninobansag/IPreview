@@ -1,0 +1,100 @@
+Each box behaves like an AND gate. The first box needs inputs 1 and 2 to agree, and the second also needs input 3 to agree. The final result is Agree only when all three agree.
+Convert the binary operands to decimal: 1011₂ = 11 and 101₂ = 5. Their product is 55. Since 55 = 32 + 16 + 4 + 2 + 1, its binary form is 110111₂.
+Recall counts correctly detected defective products out of all products the controller identified as defective. There are 5 detected and 5 missed, so recall = 5 ÷ (5 + 5) = 0.50.
+On one roll, five of the six outcomes are not 1. The rolls are independent, so multiply 5/6 three times: (5/6)³ = 125/216.
+Source code is the human-readable set of instructions written in a programming language. It is translated or interpreted so that the computer can execute it.
+Charge the first 100 units at $10 each and only the extra units at $15 each. For usage above 100, the bill is 100 × 10 + (units − 100) × 15.
+Numbers appear only at positions where both the row index i and the column index j are even. At those positions, output i; everywhere else, output the plus sign.
+A queue removes values in their arrival order. The first removal returns 8 and the second returns 1, making 1 the last of the two removed values.
+The first box produces 11 and the remainder 49 mod 11 = 5. These become the next box's inputs, so its second output is 11 mod 5 = 1.
+The processor fetches or reads the instruction from memory before decoding it. Decoding determines what operation must be executed.
+The CPU checks the faster primary cache first. If the requested data is absent, it checks the secondary cache before proceeding farther down the memory hierarchy.
+An SSD stores data in semiconductor memory and has no spinning disks or moving read/write heads. This gives it lower power use and better resistance to physical shock than an HDD.
+The bit width describes how much data a CPU can handle in an operation. A 64-bit CPU can process a wider data value at once than a 32-bit CPU, although bit width alone does not determine overall speed.
+A dual system runs the same processing on two systems and compares their results. If a failed system can be identified and isolated, the remaining system can continue processing.
+Response time includes transmission and processing after a request is made. Faster communication and a faster server reduce those parts. Adding clients or shortening manual data entry does not directly reduce the system's response time.
+Both web servers fail with probability 0.2 × 0.2 = 0.04, so at least one works with probability 0.96. The database must also work: 0.96 × 0.9 = 0.864, which rounds to 0.86.
+Multitasking allocates CPU time to multiple processes in turns. Switching between them allows their execution to overlap in time from the user's perspective.
+The BIOS or firmware initializes the hardware first. It starts the operating system, and the operating system then starts resident application programs.
+Four daily backups copy 4 × 1,000 × 3 = 12,000 MB, and Friday's full backup copies 6,000 × 3 = 18,000 MB. At 10 MB/s, the total 30,000 MB takes 3,000 seconds, or 50 minutes.
+When copied to row 4, the relative range becomes B4:D4. Product C has values 10,000, 20,000 and 30,000. Two values are greater than 15,000, so COUNTIF returns 2.
+Android is based on an open source operating system platform used in smartphones, tablets and other devices. The question asks for a mobile operating system, rather than application software.
+A macro records or defines a sequence of operations so that the sequence can be executed automatically. It is commonly used to repeat tasks in office applications.
+A blade server places the main computing components on a compact board that fits into a shared enclosure. Multiple blades share infrastructure and save installation space.
+Projection mapping fits projected images or video to the shape of buildings or other objects. It produces visual effects on physical three-dimensional surfaces.
+MPEG includes standards for compressing moving pictures and associated audio. It therefore meets the requirement to compress both video and sound.
+The Customers table must identify each customer and store its representative name. It must also carry employee and region codes as foreign keys so that the employee and region names can be obtained through joins.
+Normalization reduces duplicated data and dependencies that cause inconsistent updates. This makes relational data easier to maintain without insertion, deletion or update anomalies.
+EmployeeNumber is unique for every employee, so it identifies a row. Names can be duplicated, and DepartmentCode is shared by multiple employees, so neither is an appropriate employee primary key.
+A database log records the history of transaction operations. Such records support recovery and help restore consistency after failures.
+All devices must reach the Internet through the router's firewall. In option A, the local devices connect on the protected side, so their external traffic passes through the firewall.
+DNS resolves domain names to IP addresses. This lets users refer to a host by its name while network communication uses the address.
+An IPv4 address consists of four decimal octets, each from 0 to 255. The address 10.123.45.67 follows that structure.
+To and CC recipients are visible to the recipients of the message. BCC recipients are hidden, so the CC recipient can see the To recipient but not the hidden BCC recipient.
+Voice over IP, or VoIP, carries voice communication as data over an IP network. Applications that provide Internet voice calls use this technology.
+Security education should include new employees, be repeated regularly and after incidents, and address prevention of repeated mistakes. Restricting it to the information systems department leaves other staff unprepared.
+Destroying discarded media and encrypting stored customer information reduce leakage risk. Sending the complete customer list to every customer would disclose other people's information.
+A vulnerability is a weakness that can be exploited. Inappropriate password management is such a weakness; an attack or damaging event is a threat rather than the vulnerability itself.
+Physically destroying a CD or DVD prevents its confidential contents from being read from the discarded medium. Merely deleting a file name does not reliably remove stored data.
+Ransomware blocks access to data, commonly by encryption, and demands a ransom for restoring access. The described demand for a decryption key matches ransomware.
+A fingerprint is a physical characteristic of the person being authenticated. Authentication using such characteristics is biometric authentication.
+Disconnecting the affected PC from networks helps contain the infection and prevent spread or data transmission. The incident should then be handled through the organization's response procedures.
+A stopped device harms availability, leaked communication harms confidentiality, and incorrectly recorded data harms integrity. This produces the order Availability, Confidentiality, Integrity.
+Act is the PDCA stage where monitoring findings are used to decide corrective actions and improvements. Check evaluates the results; Act responds to those findings.
+Risk sharing distributes some financial consequences to another party through an agreement. Insurance is a common example, although it does not eliminate the underlying risk.
+A personal identification number, or PIN, is a code used as an authentication secret. The statement correctly identifies a PIN's role in authenticating a user.
+Black-box testing checks inputs and expected outputs without relying on knowledge of the internal design. That matches the tester's access and the proposed test data.
+Requirements definition clarifies the functions and performance that the system must provide. Architecture design and integration testing occur after these needs have been defined.
+Software maintenance covers changes and corrections made to software after its initial development. This includes fixing faults and adapting it to changed needs.
+Usability concerns how easily intended users can learn and operate software. Being usable after only simple training is evidence of good usability.
+DevOps combines close collaboration between development and operations with practices such as automation. This supports quicker, more reliable releases and updates.
+A Pareto chart ranks defect causes by frequency and shows their cumulative contribution. This helps the team identify the few causes that account for a large share of defects.
+The project leader should assess the quality impact and agree on concrete countermeasures with the team. Omitting planned work without this discussion would leave the quality risk unmanaged.
+The original longest route takes 8 days, while the route containing A and D takes 6. Delaying A and D by 3 days makes their route 9 days, so project completion is delayed by 1 day.
+For n members, one-to-one communication paths equal n(n − 1)/2. Six members have 15 paths and ten have 45, so the number of paths becomes three times as large.
+A work breakdown structure, or WBS, decomposes all project work into a hierarchy of smaller work packages. It organizes the work required to complete the project.
+Agreeing on acceptance rules and priorities for changes provides a controlled way to assess requests. This helps the team protect quality and delivery commitments while handling necessary changes.
+Adding members changes labor expenses. Estimating those expenses and updating the cost plan is a project cost management activity.
+IT facility management maintains the physical facilities and operating environment used for information processing. It includes conditions such as power, cooling and equipment accommodation.
+The service desk is a contact point for users. Receiving, recording and coordinating user inquiries is a central service desk activity.
+A chatbot responds to user messages through an automated conversational interface. It is suited to interactive handling of common queries.
+Check involves monitoring and measuring the service and comparing performance with targets. A service report records the results of that evaluation.
+Server operating time is an availability measure. Notification about low disk space relates to capacity management, while notification about unauthorized access relates to information security management.
+Management establishes IT governance because it is accountable for direction, oversight and alignment of IT with organizational objectives.
+Revising internal standards to meet revised industry safety requirements supports compliance with applicable laws, regulations and standards. That is the relevant internal control objective.
+An accounting audit examines whether transactions and financial reporting are free from material errors or impropriety. It checks the reliability of the accounting process and its results.
+Brainstorming encourages participants to build on one another's ideas without criticism during idea generation. This creates more possibilities before the ideas are evaluated.
+Actual revenue is 1,350 × 1,100 = 1,485,000 yen and purchase cost is 1,000 × 1,100 = 1,100,000 yen. Actual profit is 385,000 yen, so 385,000 ÷ 500,000 × 100 = 77%.
+Risk assessment consists of risk identification, risk analysis and risk evaluation. Analysis studies likelihood and consequences before risks are evaluated against criteria.
+Withdrawing from one business and reallocating resources to another determines where and how the company will compete. This is a business strategy decision.
+Operating profit subtracts selling, general and administrative expenses from gross profit. Gross profit is the amount left after deducting the cost of sales from revenue.
+A Pareto chart displays categories as bars in descending order and the cumulative percentage as a line. This makes it useful for prioritizing complaint reduction.
+The chief technology officer, or CTO, is responsible for technology direction, strategy and development. That matches the responsibility described in the question.
+Compliance promotion includes practical rules based on law and ethics, together with education that helps employees follow those rules.
+ISO/IEC 27001 specifies requirements for an information security management system. It is the information security management standard among the choices.
+Standardization establishes common specifications, components or procedures. Sharing components and procedures can simplify manufacturing and make the process more efficient.
+Under the definition given, quality is about meeting requirements. A product that meets customer needs and achieves high satisfaction is therefore an appropriate example of good quality.
+Independent outside directors can strengthen oversight of management and reduce conflicts of interest. This supports stronger corporate governance.
+A subscription provides access to software or services under recurring or time-based terms. It differs from an unrestricted one-time ownership purchase.
+Strong research capabilities are an internal strength, while rising fuel costs and environmental concerns create external threats. Developing electric vehicles uses that strength to respond to those threats.
+Mergers and acquisitions can obtain capabilities, operations or resources from other companies. This can speed up business expansion compared with developing everything internally.
+The three Cs are Customers, Competitors and Company. The analysis considers these three perspectives when examining the business environment.
+The balanced scorecard translates strategy into objectives and measures across financial, customer, internal process, and learning and growth perspectives.
+A joint venture is a jointly funded business undertaking. It allows the participating companies to share investment, resources and risks in a new activity.
+Supply chain management coordinates demand, production and delivery across organizations. Sharing sales data lets the manufacturer plan timely production and supply.
+An open API exposes defined interfaces that outside parties can use under agreed conditions. Publishing those interfaces makes compatible external services easier to develop.
+A point-of-sale system records details of sales when transactions occur. The collected product and customer information can support inventory control and sales analysis.
+Deep learning uses neural-network models with multiple processing layers to learn useful features from data. It can identify complex patterns from large training datasets.
+Computer-aided design stores designs as reusable digital data. Reusing and modifying that data reduces repeated drawing work and supports more efficient design.
+A connected car exchanges information with external systems through a network. Onboard sensors and received driving information are typical elements of this connection.
+Kanban uses signals or cards to request production and movement of parts between processes. It supports pull-based, just-in-time replenishment.
+When funders provide capital in exchange for a share of profits or dividends, the arrangement is investment-based crowdfunding. The compensation is an investment return.
+Augmented reality overlays digital information on a view of the real world. Historical building images placed over the current scene are an AR application.
+A data flow diagram shows how data moves between processes, data stores and external entities. Its focus is the processing and flow of data.
+Big data refers to data whose volume, variety and rapid growth create opportunities for new analysis. The definition in the question points to that term.
+An information systems strategy should support the organization's business strategy. Business objectives guide what information systems capabilities are needed.
+A proof of concept, or PoC, tests whether a proposed concept is practical or feasible before full development. It reduces uncertainty early in a project.
+In an RFP, the procuring information systems department presents its requirements and procurement conditions to potential vendors. Vendors use this to propose suitable solutions.
+The Sustainable Development Goals, or SDGs, are the UN's goals associated with the 2030 Agenda for Sustainable Development. The year 2030 is the key clue in the question.
+Requirements definition clarifies and agrees on what users and stakeholders need the system to do. It turns the computerization plan into agreed system requirements.
+Digital disruption occurs when digital products or business models significantly overturn an established market structure. The described replacement of conventional services matches that effect.

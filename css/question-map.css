@@ -1,0 +1,134 @@
+.navigator-card {
+  padding: 22px 20px 18px;
+}
+.navigator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigator-header h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 17px;
+  letter-spacing: -0.04em;
+  margin: 6px 0 0;
+}
+.navigator-count {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  background: #f0f4f6;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 700;
+  color: #667681;
+}
+.navigator-help {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #8a969f;
+  margin: 9px 0 15px;
+}
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px;
+  min-width: 0;
+  width: 100%;
+}
+.question-grid button {
+  min-width: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: 30px;
+  padding: 0 2px;
+  border: 1px solid #e3e8eb;
+  border-radius: 6px;
+  background: white;
+  color: #82909a;
+  font-size: 10px;
+  font-weight: 700;
+}
+.question-grid button:hover {
+  border-color: #8ec9c0;
+}
+.question-grid button.current {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: white;
+}
+.question-grid button.answered:not(.current) {
+  background: var(--pale-teal);
+  color: var(--teal-dark);
+  border-color: #cceae4;
+}
+.legend {
+  display: flex;
+  gap: 14px;
+  color: #8b969f;
+  font-size: 9px;
+  margin-top: 12px;
+}
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.legend i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #dbe2e6;
+  border-radius: 3px;
+}
+.legend-current {
+  background: var(--ink);
+  border-color: var(--ink) !important;
+}
+.legend-answered {
+  background: var(--pale-teal);
+  border-color: #cceae4 !important;
+}
+.topic-breakdown {
+  margin-top: 20px;
+  border-top: 1px solid #edf0f2;
+  padding-top: 17px;
+  display: grid;
+  gap: 11px;
+}
+.topic-breakdown > .eyebrow {
+  margin-bottom: 1px;
+}
+.topic-breakdown div {
+  display: grid;
+  grid-template-columns: 8px 1fr auto;
+  align-items: center;
+  gap: 7px;
+  color: #71808a;
+  font-size: 9px;
+}
+.topic-breakdown b {
+  color: var(--ink);
+  font-size: 10px;
+}
+.topic-dot {
+  width: 7px;
+  height: 7px;
+  display: block;
+  border-radius: 50%;
+}
+.dot-foundation {
+  background: #3a9f91;
+}
+.dot-system {
+  background: #718da7;
+}
+.dot-security {
+  background: #d49c48;
+}
+.dot-management {
+  background: #8c81ba;
+}
+.dot-business {
+  background: #d27e72;
+}

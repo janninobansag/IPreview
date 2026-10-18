@@ -1,0 +1,144 @@
+/* Screen-fit and readability pass */
+.app-shell {
+  max-width: 1680px;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+.topbar {
+  height: 82px;
+}
+.brand {
+  font-size: 22px;
+}
+.topbar-right {
+  gap: 22px;
+}
+.theme-toggle {
+  min-height: 42px;
+  padding: 0 13px;
+  font-size: 12px;
+}
+.save-state {
+  font-size: 13px;
+}
+.button {
+  min-height: 48px;
+  padding-right: 18px;
+  padding-left: 18px;
+  font-size: 14px;
+}
+.button-quiet,
+.button-outline {
+  font-size: 13px;
+}
+main {
+  padding-top: 38px;
+}
+.intro {
+  max-width: 880px;
+  margin-bottom: 28px;
+}
+.eyebrow {
+  font-size: 11px;
+}
+h1 {
+  font-size: clamp(44px, 4vw, 64px);
+  margin-top: 15px;
+  margin-bottom: 14px;
+}
+.intro-copy {
+  max-width: 760px;
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 19px;
+}
+.intro-meta {
+  gap: 22px;
+}
+.intro-meta strong {
+  font-size: 15px;
+}
+.intro-meta span {
+  font-size: 13px;
+}
+.quiz-layout {
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 24px;
+}
+.quiz-toolbar {
+  margin-bottom: 12px;
+}
+.filter-wrap label {
+  font-size: 11px;
+}
+select {
+  min-width: 225px;
+  font-size: 16px;
+}
+.progress-info {
+  gap: 16px;
+  font-size: 13px;
+}
+.progress-track {
+  height: 5px;
+  margin-bottom: 16px;
+}
+.question-card {
+  min-height: 430px;
+  padding: 34px 38px 25px;
+}
+.question-topline {
+  margin-bottom: 20px;
+}
+.question-number {
+  font-size: 11px;
+}
+.topic-pill {
+  font-size: 10px;
+  padding: 7px 10px;
+}
+.question-card h2 {
+  max-width: 900px;
+  font-size: clamp(22px, 1.75vw, 28px);
+  line-height: 1.42;
+  margin-bottom: 24px;
+}
+.question-visual {
+  margin-bottom: 20px;
+  padding: 13px 17px;
+}
+.question-visual svg {
+  max-height: 145px;
+}
+.question-visual svg text {
+  font-size: 14px;
+}
+.answer-options {
+  gap: 11px;
+}
+.answer-choice {
+  min-height: 56px;
+  gap: 14px;
+  padding: 13px 16px;
+  font-size: 15px;
+}
+.option-letter {
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+}
+.question-footer {
+  padding-top: 25px;
+}
+.autosave-note {
+  font-size: 11px;
+}
+.submit-row {
+  padding-top: 19px;
+}
+.submit-row strong {
+  font-size: 13px;
+}
+.submit-row span {
+  font-size: 12px;
+}

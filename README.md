@@ -1,21 +1,44 @@
-# ITPEC Practice Quiz
+# IPreview
 
-A static IT Passport practice site with 100 questions each for the 2025, 2024, and 2023 papers. The home page forwards to the 2025 quiz.
+ITPEC IT Passport practice quizzes with 100 questions each for April 2025, 2024
+and 2023. The root home page opens the 2025 quiz.
 
-## Folder layout
+## Develop
 
-- `html/` contains the three year pages and the 2025 home page.
-- `css/` contains the site styles.
-- `js/` contains the quiz behavior and question data.
-- `questions/` contains the diagrams used by the quizzes.
-- `index.html` at the repository root forwards visitors to `html/index.html` so static hosts can use the site as their home page.
+- Open index.html for a local preview, or serve the project with a static server.
+- Edit pages in html/, styles in css/, and browser behavior in js/.
+- Shared page markup is generated from tools/templates/quiz-page.html.
+- Browser question banks are in data/quizzes/; editable source content is in data/source/.
+- Documentation and reference PDFs belong in doc/. It contains no application code.
 
-## Deploy with Vercel
+Run npm install once to install the development formatter and test library.
 
-Import this GitHub repository in Vercel. Use **Other** as the Framework Preset, leave the Build Command blank, and serve the repository root.
+| Command              | Purpose                                                |
+| -------------------- | ------------------------------------------------------ |
+| npm run build        | Build the deployable website into dist/                |
+| npm test             | Build and verify quiz behavior and deployment contents |
+| npm run format       | Format the application, tools and documentation        |
+| npm run format:check | Check formatting                                       |
+| npm run package      | Create artifacts/ipreview-tiiny-host.zip               |
 
-## Run locally
+After changing question source data or shared page markup, run
+python tools/compile_quizzes.py and npm run format.
 
-Open `index.html` in a browser. No server or build step is required.
+## Deploy on Vercel
 
-Answers and progress are stored in the visitor's browser. Correct answers are included in the client-side quiz data, as expected for a self-study practice reviewer. Every question has an ITPEC source citation; study explanations are custom reviewer content.
+Import this repository and keep its Root Directory at the repository root.
+The included vercel.json sets the build command and publishes only dist/.
+The production build uses Node's built-in libraries and needs no package installation.
+
+For Tiiny.host, upload artifacts/ipreview-tiiny-host.zip after npm run package.
+
+## Quiz behavior
+
+Progress is saved separately for each year in the visitor's browser.
+The question map links to inline explanations after grading. Correct answers
+are included in the browser data because this is a self-study reviewer.
+Question citations link the material to ITPEC's past papers; study explanations
+are added reviewer content.
+
+See [project architecture](doc/architecture.md) for module responsibilities,
+naming conventions and the deployment boundary.

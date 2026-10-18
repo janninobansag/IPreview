@@ -1,0 +1,72 @@
+:root[data-theme='dark'] .question-grid button {
+  color: #b4c1c9;
+  background: #1b2932;
+  border-color: #364751;
+}
+:root[data-theme='dark'] .question-grid button:hover {
+  border-color: #4d9388;
+}
+:root[data-theme='dark'] .question-grid button.current {
+  color: #14232b;
+  background: #dce7eb;
+  border-color: #dce7eb;
+}
+:root[data-theme='dark'] .question-grid button.answered:not(.current) {
+  color: #8bd4c8;
+  background: #1b3c3a;
+  border-color: #2e6159;
+}
+:root[data-theme='dark'] .navigator-count {
+  color: #d8e3e8;
+  background: #273842;
+}
+:root[data-theme='dark'] .legend-current {
+  background: #dce7eb;
+  border-color: #dce7eb !important;
+}
+:root[data-theme='dark'] .legend-answered {
+  background: #1b3c3a;
+  border-color: #2e6159 !important;
+}
+:root[data-theme='dark'] .legend i {
+  border-color: #43545e;
+}
+:root[data-theme='dark'] .topic-breakdown {
+  border-color: #2d3d47;
+}
+:root[data-theme='dark'] .topic-breakdown div,
+:root[data-theme='dark'] .legend {
+  color: #a6b5be;
+}
+:root[data-theme='dark'] .note-card {
+  background: #1d2d37;
+  color: #b2c0c8;
+}
+:root[data-theme='dark'] .note-icon {
+  border-color: #60737e;
+  color: #c1d0d7;
+}
+:root[data-theme='dark'] footer {
+  border-color: var(--line);
+}
+:root[data-theme='dark'] .result-heading {
+  border-color: #2c3c46;
+}
+:root[data-theme='dark'] .result-heading p,
+:root[data-theme='dark'] .review-answer,
+:root[data-theme='dark'] .review-explanation {
+  color: #a9b7bf;
+}
+:root[data-theme='dark'] .review-item {
+  border-color: #34454f;
+  background: #1b2932;
+}
+:root[data-theme='dark'] .review-item.is-correct {
+  border-left-color: #46ab80;
+}
+:root[data-theme='dark'] .review-item.is-wrong {
+  border-left-color: #d97873;
+}
+:root[data-theme='dark'] .result-score {
+  color: #8dd4c8;
+}

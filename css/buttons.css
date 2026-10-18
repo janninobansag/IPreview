@@ -1,0 +1,54 @@
+.button {
+  min-height: 41px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+.button:active {
+  transform: translateY(1px);
+}
+.button:focus-visible,
+select:focus-visible,
+.question-grid button:focus-visible,
+.answer-choice:focus-within {
+  outline: 3px solid rgba(22, 163, 148, 0.25);
+  outline-offset: 2px;
+}
+.button-quiet {
+  background: transparent;
+  color: var(--muted);
+  border-color: #d9e0e5;
+}
+.button-quiet:hover,
+.button-outline:hover {
+  border-color: #aab9c4;
+  background: white;
+  color: var(--ink);
+}
+.button-dark {
+  background: var(--ink);
+  color: white;
+}
+.button-dark:hover {
+  background: #29455b;
+}
+.button-accent {
+  background: var(--teal);
+  color: white;
+  padding: 0 19px;
+}
+.button-accent:hover {
+  background: var(--teal-dark);
+}
+.button-outline {
+  border-color: #d9e0e5;
+  color: var(--ink);
+  background: transparent;
+}

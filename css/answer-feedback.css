@@ -1,0 +1,186 @@
+/* Submitted answer review */
+.question-feedback {
+  width: 100%;
+  margin-top: 20px;
+  padding: 18px 20px;
+  border: 1px solid #d8e6dc;
+  border-radius: 9px;
+  background: #f2faf4;
+}
+.question-feedback h3 {
+  margin: 0 0 10px;
+  color: #225d3d;
+  font-size: 17px;
+}
+.question-feedback p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.question-feedback p strong {
+  color: var(--ink);
+}
+.question-feedback .feedback-explanation {
+  margin-top: 11px;
+}
+.question-feedback.is-wrong {
+  border-color: #e9c5c2;
+  background: #fff5f4;
+}
+.question-feedback.is-wrong h3 {
+  color: #a4312b;
+}
+.question-feedback.is-unanswered {
+  border-color: #ead9ad;
+  background: #fffaf0;
+}
+.question-feedback.is-unanswered h3 {
+  color: #876116;
+}
+.question-feedback .question-visual {
+  margin: 15px 0 0;
+}
+.review-item .question-visual {
+  margin: 12px 0 0;
+}
+.question-visual svg rect.hit {
+  fill: var(--teal);
+  stroke: var(--teal);
+}
+.answer-choice.correct {
+  color: #205c3b;
+  background: #edf8f1;
+  border-color: #59a879;
+}
+.answer-choice.wrong {
+  color: #8f2924;
+  background: #fff0ef;
+  border-color: #d97873;
+}
+.question-grid button.answered.correct:not(.current) {
+  color: #1d633d;
+  background: #dcf2e4;
+  border-color: #55a878;
+}
+.question-grid button.answered.incorrect:not(.current) {
+  color: #9c2d28;
+  background: #fde3e1;
+  border-color: #dc716a;
+}
+.question-grid button.unanswered {
+  color: #835d14;
+  background: #fff0d1;
+  border-color: #dfba67;
+}
+.question-grid button.current.correct {
+  color: #fff;
+  background: #29814f;
+  border-color: #29814f;
+}
+.question-grid button.current.incorrect {
+  color: #fff;
+  background: #c5423b;
+  border-color: #c5423b;
+}
+.question-grid button.current.unanswered {
+  color: #fff;
+  background: #a87514;
+  border-color: #a87514;
+}
+.legend {
+  flex-wrap: wrap;
+}
+.legend-correct {
+  background: #dcf2e4;
+  border-color: #55a878 !important;
+}
+.legend-incorrect {
+  background: #fde3e1;
+  border-color: #dc716a !important;
+}
+.legend-unanswered {
+  background: #fff0d1;
+  border-color: #dfba67 !important;
+}
+
+:root[data-theme='dark'] .question-feedback.is-correct {
+  color: #c5e8d1;
+  background: #1c382e;
+  border-color: #3d795b;
+}
+:root[data-theme='dark'] .question-feedback.is-correct h3 {
+  color: #9be0b3;
+}
+:root[data-theme='dark'] .question-feedback.is-wrong {
+  color: #f0c5c2;
+  background: #3b2929;
+  border-color: #81504e;
+}
+:root[data-theme='dark'] .question-feedback.is-wrong h3 {
+  color: #ffaaa3;
+}
+:root[data-theme='dark'] .question-feedback.is-unanswered {
+  color: #f0dfb8;
+  background: #382f1e;
+  border-color: #77602f;
+}
+:root[data-theme='dark'] .question-feedback.is-unanswered h3 {
+  color: #f0cf82;
+}
+:root[data-theme='dark'] .question-feedback p strong {
+  color: #e3edf2;
+}
+:root[data-theme='dark'] .answer-choice.correct,
+:root[data-theme='dark'] .answer-choice.selected.correct {
+  color: #c5e8d1;
+  background: #1c382e;
+  border-color: #46ab80;
+}
+:root[data-theme='dark'] .answer-choice.wrong,
+:root[data-theme='dark'] .answer-choice.selected.wrong {
+  color: #f0c5c2;
+  background: #3b2929;
+  border-color: #c87570;
+}
+:root[data-theme='dark'] .question-grid button.answered.correct:not(.current) {
+  color: #a8e1ba;
+  background: #1c382e;
+  border-color: #3d795b;
+}
+:root[data-theme='dark'] .question-grid button.answered.incorrect:not(.current) {
+  color: #ffc1bc;
+  background: #3b2929;
+  border-color: #81504e;
+}
+:root[data-theme='dark'] .question-grid button.unanswered {
+  color: #f0cf82;
+  background: #382f1e;
+  border-color: #77602f;
+}
+:root[data-theme='dark'] .question-grid button.current.correct {
+  color: #10251a;
+  background: #8ed5a6;
+  border-color: #8ed5a6;
+}
+:root[data-theme='dark'] .question-grid button.current.incorrect {
+  color: #fff;
+  background: #c5423b;
+  border-color: #c5423b;
+}
+:root[data-theme='dark'] .question-grid button.current.unanswered {
+  color: #fff;
+  background: #a87514;
+  border-color: #a87514;
+}
+:root[data-theme='dark'] .legend-correct {
+  background: #1c382e;
+  border-color: #3d795b !important;
+}
+:root[data-theme='dark'] .legend-incorrect {
+  background: #3b2929;
+  border-color: #81504e !important;
+}
+:root[data-theme='dark'] .legend-unanswered {
+  background: #382f1e;
+  border-color: #77602f !important;
+}

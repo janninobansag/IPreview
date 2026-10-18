@@ -1,0 +1,96 @@
+.navigator-card {
+  padding: 26px 24px 22px;
+}
+.navigator-header h2 {
+  font-size: 21px;
+}
+.navigator-count {
+  width: 36px;
+  height: 36px;
+  font-size: 13px;
+}
+.navigator-help {
+  font-size: 12px;
+  margin: 10px 0 17px;
+}
+.question-grid {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px;
+}
+.question-grid button {
+  min-height: 36px;
+  font-size: 12px;
+  border-radius: 7px;
+}
+.legend {
+  gap: 16px;
+  font-size: 11px;
+  margin-top: 14px;
+}
+.legend i {
+  width: 11px;
+  height: 11px;
+}
+.topic-breakdown {
+  margin-top: 22px;
+  padding-top: 18px;
+  gap: 13px;
+}
+.topic-breakdown div {
+  grid-template-columns: 9px 1fr auto;
+  gap: 8px;
+  font-size: 11px;
+}
+.topic-breakdown b {
+  font-size: 12px;
+}
+.topic-dot {
+  width: 8px;
+  height: 8px;
+}
+.note-card {
+  gap: 14px;
+  margin: 27px 0 34px;
+  padding: 17px 20px;
+}
+.note-card p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.note-side {
+  font-size: 11px;
+}
+footer {
+  padding: 18px 0 25px;
+  font-size: 11px;
+}
+.results-panel {
+  margin-top: 25px;
+  padding: 26px;
+}
+.result-score {
+  width: 74px;
+  height: 74px;
+  flex-basis: 74px;
+  font-size: 21px;
+}
+.result-heading h2 {
+  font-size: 23px;
+}
+.result-heading p {
+  font-size: 13px;
+}
+.result-actions .button {
+  min-height: 42px;
+  font-size: 12px;
+}
+.review-item {
+  padding: 15px;
+}
+.review-item h3 {
+  font-size: 14px;
+}
+.review-answer,
+.review-explanation {
+  font-size: 13px;
+}

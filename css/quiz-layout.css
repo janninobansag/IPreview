@@ -1,0 +1,145 @@
+main {
+  padding-top: 43px;
+}
+.intro {
+  max-width: 690px;
+  margin-bottom: 32px;
+}
+.eyebrow {
+  color: #7f8a94;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+.eyebrow-line {
+  display: inline-block;
+  height: 1px;
+  width: 25px;
+  background: var(--teal);
+  vertical-align: middle;
+  margin: 0 8px 3px 0;
+}
+.eyebrow-year {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--teal-dark);
+  letter-spacing: 0.07em;
+  padding: 4px 7px;
+  border-radius: 4px;
+  background: var(--pale-teal);
+}
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+h1 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(36px, 4.2vw, 52px);
+  letter-spacing: -0.065em;
+  line-height: 1.06;
+  margin: 14px 0 13px;
+  font-weight: 800;
+}
+h1 span {
+  color: var(--teal);
+}
+.intro-copy {
+  color: #6c7a85;
+  font-size: 14px;
+  line-height: 1.75;
+  max-width: 615px;
+  margin-bottom: 20px;
+}
+.intro-meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #81909b;
+}
+.intro-meta div {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+.intro-meta strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+.intro-meta span {
+  font-size: 11px;
+}
+.intro-meta i {
+  width: 1px;
+  height: 14px;
+  background: #d1d9de;
+}
+.quiz-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 282px;
+  gap: 20px;
+  align-items: start;
+}
+.quiz-column {
+  min-width: 0;
+}
+.quiz-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 9px;
+}
+.filter-wrap {
+  display: grid;
+  gap: 6px;
+}
+.filter-wrap label {
+  font-size: 9px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #84919b;
+}
+select {
+  min-width: 205px;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  padding: 2px 22px 2px 0;
+  font-size: 13px;
+  font-weight: 700;
+  outline-color: var(--teal);
+}
+select option {
+  color: #182b3d;
+  background-color: #fff;
+}
+.progress-info {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding-bottom: 4px;
+  color: #83909a;
+  font-size: 10px;
+}
+.progress-info span:first-child {
+  color: var(--ink);
+  font-weight: 700;
+}
+.progress-track {
+  height: 4px;
+  width: 100%;
+  background: #e2e8ea;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 13px;
+}
+.progress-track span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--teal);
+  border-radius: inherit;
+  transition: width 0.25s ease;
+}

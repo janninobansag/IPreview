@@ -1,0 +1,109 @@
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --ink: #e3edf2;
+  --muted: #a4b2bb;
+  --line: #31424d;
+  --canvas: #101a21;
+  --paper: #19262f;
+  --teal: #32b8a7;
+  --teal-dark: #6bd2c2;
+  --pale-teal: #1b3c3a;
+  --soft-blue: #1d2d37;
+  --viz-line: #70838e;
+  --viz-box: #263943;
+  --shadow: 0 14px 44px rgba(0, 0, 0, 0.22);
+}
+:root[data-theme='dark'] .topbar {
+  border-color: var(--line);
+}
+:root[data-theme='dark'] .brand-light,
+:root[data-theme='dark'] .save-state,
+:root[data-theme='dark'] .intro-copy,
+:root[data-theme='dark'] .intro-meta span,
+:root[data-theme='dark'] .navigator-help,
+:root[data-theme='dark'] .autosave-note,
+:root[data-theme='dark'] footer {
+  color: #9baab4;
+}
+:root[data-theme='dark'] .eyebrow {
+  color: #9aabb5;
+}
+:root[data-theme='dark'] .eyebrow-year {
+  color: #82d1c5;
+  background: #1b3c3a;
+}
+:root[data-theme='dark'] .intro-meta i {
+  background: #3a4a55;
+}
+:root[data-theme='dark'] .theme-toggle {
+  color: #bdcbd3;
+  border-color: #43535e;
+}
+:root[data-theme='dark'] .theme-toggle:hover,
+:root[data-theme='dark'] .button-quiet:hover,
+:root[data-theme='dark'] .button-outline:hover {
+  background: #243640;
+  color: var(--ink);
+  border-color: #60717b;
+}
+:root[data-theme='dark'] .button-quiet,
+:root[data-theme='dark'] .button-outline {
+  color: #bfccd3;
+  border-color: #43535e;
+}
+:root[data-theme='dark'] .button-dark {
+  background: #dce7eb;
+  color: #14222a;
+}
+:root[data-theme='dark'] .button-dark:hover {
+  background: #c5d5dc;
+}
+:root[data-theme='dark'] select {
+  color: var(--ink);
+}
+:root[data-theme='dark'] .progress-track {
+  background: #2c3c46;
+}
+:root[data-theme='dark'] .question-card,
+:root[data-theme='dark'] .navigator-card,
+:root[data-theme='dark'] .results-panel {
+  background: var(--paper);
+  border-color: #2a3b45;
+}
+:root[data-theme='dark'] .topic-pill {
+  color: #8dd4c8;
+  background: #1d3a3a;
+}
+:root[data-theme='dark'] .question-visual {
+  color: #c2d1d9;
+  border-color: #30444f;
+}
+:root[data-theme='dark'] .answer-choice {
+  color: #bdcbd3;
+  background: #1b2932;
+  border-color: #34454f;
+}
+:root[data-theme='dark'] .answer-choice:hover {
+  background: #20343a;
+  border-color: #498e85;
+}
+:root[data-theme='dark'] .answer-choice.selected {
+  color: var(--ink);
+  background: #1d3c3a;
+  border-color: var(--teal);
+}
+:root[data-theme='dark'] .answer-choice.selected .option-letter {
+  color: #10221f;
+}
+:root[data-theme='dark'] .answer-choice.correct {
+  background: #1c382e;
+  border-color: #46ab80;
+}
+:root[data-theme='dark'] .answer-choice.wrong {
+  background: #3b2929;
+  border-color: #c87570;
+}
+:root[data-theme='dark'] .option-letter {
+  color: #a9b8c1;
+  border-color: #465761;
+}

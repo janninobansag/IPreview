@@ -1,0 +1,155 @@
+{
+  "2025": {
+    "1": {
+      "equation": "Final output = Input 1 AND Input 2 AND Input 3"
+    },
+    "2": {
+      "steps": [
+        "1011₂ = 8 + 2 + 1 = 11",
+        "101₂ = 4 + 1 = 5",
+        "11 × 5 = 55",
+        "55 = 32 + 16 + 4 + 2 + 1"
+      ],
+      "equation": "1011₂ × 101₂ = 110111₂"
+    },
+    "3": {
+      "steps": [
+        "True positives: 5 defective products correctly detected.",
+        "False negatives: 5 defective products missed.",
+        "All actual positives: 5 + 5 = 10."
+      ],
+      "equation": "Recall = TP / (TP + FN)\n       = 5 / (5 + 5)\n       = 0.50 = 50%",
+      "recallVisual": true
+    },
+    "4": {
+      "steps": [
+        "Chance of not getting 1 on one roll: 5/6.",
+        "Multiply the three independent probabilities."
+      ],
+      "equation": "(5/6) × (5/6) × (5/6) = 125/216"
+    },
+    "8": {
+      "equation": "Queue: 8 → 1 → 6 → 3\n1st out: 8\n2nd out: 1"
+    },
+    "9": {
+      "steps": [
+        "First box: 49 = 11 × 4 + 5, so its outputs are 11 and 5.",
+        "Second box: 11 = 5 × 2 + 1, so its second output is 1."
+      ],
+      "equation": "49 mod 11 = 5\n11 mod 5 = 1"
+    },
+    "16": {
+      "steps": [
+        "Chance one web server fails: 1 − 0.8 = 0.2.",
+        "Chance both web servers fail: 0.2 × 0.2 = 0.04.",
+        "Chance at least one web server works: 1 − 0.04 = 0.96.",
+        "The database must also work: multiply by 0.9."
+      ],
+      "equation": "[1 − (1 − 0.8)²] × 0.9\n= 0.864 ≈ 0.86"
+    },
+    "19": {
+      "steps": [
+        "Monday–Thursday: 4 × 1,000 files × 3 MB = 12,000 MB.",
+        "Friday: 6,000 files × 3 MB = 18,000 MB.",
+        "Total: 30,000 MB ÷ 10 MB/s = 3,000 seconds."
+      ],
+      "equation": "3,000 seconds ÷ 60 = 50 minutes"
+    },
+    "20": {
+      "equation": "Row 4: [10,000, 20,000, 30,000]\nValues > 15,000: 20,000 and 30,000\nCOUNTIF = 2"
+    },
+    "53": {
+      "equation": "Original longest route = 8 days\nDelayed A–D route = 6 + 3 = 9 days\nProject delay = 9 − 8 = 1 day"
+    },
+    "54": {
+      "steps": [
+        "6 members: 6 × 5 ÷ 2 = 15 pairs.",
+        "10 members: 10 × 9 ÷ 2 = 45 pairs."
+      ],
+      "equation": "45 ÷ 15 = 3 times"
+    },
+    "67": {
+      "equation": "Actual profit = (1,350 × 1,100) − (1,000 × 1,100)\n              = 385,000 yen\nPlan ratio = 385,000 ÷ 500,000 × 100 = 77%"
+    }
+  },
+  "2024": {
+    "2": {
+      "equation": "A  B | A AND B\n0  0 |    0\n0  1 |    0\n1  0 |    0\n1  1 |    1"
+    },
+    "4": {
+      "equation": "5 chairperson choices × 5 secretary choices = 25"
+    },
+    "6": {
+      "equation": "Start:     x = 2, y = 3\n1st cycle: y = 2, x = 2 + 2 = 4\n2nd cycle: y = 1, x = 4 + 1 = 5\nStop because y = 1."
+    },
+    "7": {
+      "equation": "State 1: 11 mod 3 = 2 → two clockwise steps → 3\nState 3: 33 mod 3 = 0 → one clockwise step → 4"
+    },
+    "8": {
+      "equation": "Push A, then B, then C\nTop → C, B, A\nAfter removing C, B still blocks A.\nTherefore C → A → B is impossible."
+    },
+    "9": {
+      "equation": "Save array[1]\narray[i − 1] ← array[i]\narray[last] ← saved value\n[1,2,3,4,5] → [2,3,4,5,1]"
+    },
+    "20": {
+      "equation": "IF(C2 < AVERAGE($C2:$E2), 'X', 'O')\nC2 moves with the branch and month.\n$C and $E keep the average's columns fixed."
+    },
+    "25": {
+      "equation": "Compressed characters ÷ Original characters × 100\n= 13 ÷ 25 × 100\n= 52.0%"
+    },
+    "67": {
+      "equation": "Order: C → A → B\nMachine X: C 0–6 | A 6–14 | B 14–24\nMachine Y: C 6–14 | A 14–24 | B 24–29\nCompletion time: 29 minutes"
+    },
+    "68": {
+      "steps": [
+        "100 lunch boxes × 5 dumplings = 500 dumplings.",
+        "500 × 20 g stuffing = 10,000 g stuffing.",
+        "60 g of each 100 g of stuffing is meat."
+      ],
+      "equation": "10,000 g × 0.60 = 6,000 g meat"
+    }
+  },
+  "2023": {
+    "1": {
+      "choices": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ]
+    },
+    "2": {
+      "preferOriginal": true,
+      "equation": "1 TB = 10¹² bytes\n2 TB = 2 × 10¹² bytes"
+    },
+    "3": {
+      "equation": "$20,000 < $10,000? N\n3 days < 1 week? Y\nDecision-table column (N, Y) → $100"
+    },
+    "4": {
+      "steps": [
+        "Sum the nine data values: 2,700.",
+        "Mean: 2,700 ÷ 9 = 300.",
+        "Median position: (9 + 1) ÷ 2 = 5.",
+        "The fifth value in the sorted list is 40."
+      ],
+      "equation": "Mean = 300\nMedian = 40"
+    },
+    "5": {
+      "equation": "Base size: 10 points\nOuter <B> still active: +1\nInner <B> already closed\nUnderlined text: 11 points"
+    },
+    "6": {
+      "equation": "Stack, bottom → top:\nStart: [1, 2, 2, 3, 4]\nOp 1:  [1, 2, 2, 7]\nOp 2:  [1, 2, 2, 7, 3]\nOp 3:  [1, 2, 4]   ((2 + 7 + 3) / 3 = 4)\nOp 4:  [1, 2]      (|4 − 2| = 2)"
+    },
+    "57": {
+      "steps": [
+        "40% of the work cost 6 million yen.",
+        "At the same productivity, total cost is 6 ÷ 0.40 = 15 million yen.",
+        "Subtract the original 10 million yen budget."
+      ],
+      "equation": "15 million − 10 million = 5 million yen over budget"
+    },
+    "72": {
+      "equation": "Actual profit = (1,350 × 1,100) − (1,000 × 1,100)\n              = 385,000 yen\n385,000 ÷ 500,000 × 100 = 77%"
+    }
+  }
+}

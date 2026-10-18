@@ -1,0 +1,100 @@
+Variance measures how far observations spread from their mean. With the same scales, histogram D places more observations far from the center, giving the greatest spread and the largest variance.
+In the decimal storage-capacity convention used here, tera means 10¹². A 2 TB disk therefore represents 2 × 10¹² bytes.
+An improvement of $20,000 does not satisfy the condition 'less than $10,000,' while three days does satisfy 'less than one week.' Select the N, Y column of the decision table, which awards $100.
+The nine numbers sum to 2,700, so the mean is 2,700 ÷ 9 = 300. The sorted list already shown has nine items, making its fifth item, 40, the median.
+The underlined words are inside the outer B tag, but the inner B tag has already closed. Only one increase is active there, so the size is 10 + 1 = 11 points.
+Use bottom-to-top stack order. The initial stack [1,2,2,3,4] becomes [1,2,2,7] after adding the top two, then [1,2,2,7,3] after pushing 3. Averaging the top three gives [1,2,4]. The final difference leaves [1,2], which is option B.
+Java is an object-oriented language whose compiled bytecode can run on compatible Java virtual machines across platforms. This supports platform-independent portability.
+An algorithm is a defined sequence of steps for accomplishing a task or solving a problem. It describes the processing procedure rather than a particular programming language.
+Source code is the human-readable form of program instructions. It is written in a programming language before being interpreted or translated for execution.
+Bluetooth is a short-range wireless communication standard used to connect devices and peripherals. Common examples include keyboards, mice and headsets.
+A touch panel detects contact on the display so that users can operate the computer by touching it. Resistive and capacitive are common sensing methods.
+A multi-core processor contains multiple processing cores. Running different work on separate cores can increase total throughput when the workload supports parallel execution.
+Plug and play detects a newly attached device and configures the necessary support automatically where possible. Automatic driver installation is a typical part of this function.
+A dual system performs the same work on two computers and compares the results. Cross-checking helps detect faults and improve reliability.
+Horizontal load distribution runs the same application across multiple computers. Requests can be distributed among those computers instead of concentrating the load on one machine.
+Batch processing collects a group of data or jobs and processes them together. The grouping may be based on a time interval or a required quantity.
+An existing application package can reuse software already developed for common business needs. This can reduce the cost of creating an entirely custom application.
+Data access should be granted according to each user's legitimate business needs and the data's sensitivity. Access rights defined for users and data enforce those limits.
+An operating system manages shared computer resources and allocates them to applications. CPU scheduling, memory management and storage access are examples.
+The current directory is the directory being used now, which is description C. An absolute path starts at the root, which is B, and the root directory is the top-level directory, which is A.
+A deadlock occurs when processes each hold resources and wait indefinitely for resources held by the others. None can proceed to release what the others need.
+Linux and PostgreSQL are examples of open source software. Open source requires access to source code and does not permit restricting users or fields of endeavor in the way stated by A and B.
+Fragmented files occupy separated disk areas. On a mechanical hard disk, the extra head movement needed to reach those areas can slow reading.
+Web accessibility concerns whether people with varied abilities and circumstances can use web information and functions. It includes removing barriers related to disability and age.
+Virtual reality creates an immersive simulated environment that a user can perceive as if present in it. Computer-generated spaces are a common example.
+Online storage provides remote file storage through a network service. Authorized users can access their files from different locations using the Internet.
+Normalization organizes relational data to reduce duplication and update anomalies. This helps keep stored information consistent.
+Selection filters rows according to a condition. Choosing products whose price is at least 100 yen is therefore a selection operation.
+First identify the data required by the business. Then create suitable tables, and finally insert records into the defined structure.
+SMTP sends mail from the client and transfers mail between servers. POP3 retrieves mail from a server to the receiving client, giving SMTP, POP3, SMTP.
+A firewall controls traffic between networks according to security rules. Placing it at the boundary helps block unauthorized external access.
+IPv6 provides a much larger address space than IPv4. This addresses the shortage of Internet addresses available under IPv4.
+A mailing list distributes a message sent to one list address to its registered members. It is designed for this one-to-many email delivery pattern.
+A wide area network connects networks across geographically separated sites. Communication between the Kyoto office and Tokyo headquarters requires such a connection.
+A keylogger records keyboard input. This can expose passwords and other information typed by the user.
+Phishing uses deceptive messages and imitation websites to obtain sensitive information. It tricks the recipient into trusting an attacker-controlled destination.
+A denial-of-service attack attempts to make a service unavailable. Interruption of the server's service is its direct effect.
+Antivirus software helps detect or block malware, and security patches close known weaknesses. Disk passwords and file encryption protect access or confidentiality but do not by themselves prevent infection.
+A digital signature helps verify the sender's signing identity and detect changes to the signed content. It does not encrypt the message to prevent other people from reading it.
+Malware is the general term for software designed to cause harm or perform unwanted actions. Keyloggers and worms are examples.
+A vulnerability is a weakness, a threat is something that can exploit it, and risk is the potential for resulting harm. The order of the blanks is Vulnerability, Threat, Risk.
+Reusing the same credentials lets an attacker try credentials leaked from one service at another. Unique passwords reduce this cross-site credential-stuffing risk.
+Iris, fingerprint and vein patterns are biological characteristics. A PIN is knowledge-based authentication, so the biometric set is II, III and IV.
+Check is the stage where the effectiveness of the processes is measured and evaluated. The findings can then inform improvements in the Act stage.
+TLS provides the encrypted transport used by HTTPS. It protects communication between the web browser and web server.
+Software maintenance includes correcting faults and adapting software to changing technology and business needs after delivery. It supports continued useful operation.
+External design defines the system's user-visible interfaces, including screens and forms. Internal design focuses on how the software implements those functions.
+Black-box testing verifies observable behavior using inputs and expected outputs without examining internal implementation details.
+Acceptance testing lets the ordering user or customer check whether the delivered system satisfies the agreed needs. It is the user-led test among the listed stages.
+The waterfall model proceeds through defined development phases in sequence. A phase is completed before the project moves to the next phase.
+Brainstorming gathers ideas from a group before evaluating them. The cross-functional team is using it to identify possible project risks.
+Proven technology reduces technical uncertainty and a prototype tests assumptions before full development. Insurance transfers financial consequences but does not directly improve product quality, so A and C are the relevant measures.
+WBS decomposition should reach work packages that can be estimated and managed. Breaking work down to that level supports practical cost and schedule control.
+Defining scope clarifies what work the project will perform and which deliverables it will produce. It establishes the boundary of the project.
+The leader should discuss specific measures to protect quality and build agreement before changing the planned process. Skipping work without this assessment leaves quality risks unresolved.
+Progress management checks how actual work compares with the schedule. Assessing how one delayed activity affects overall completion is a scheduling concern.
+If 40% of the deliverables cost 6 million yen, the same productivity gives a total cost of 6 ÷ 0.40 = 15 million yen. Against a 10 million yen budget, the excess is 5 million yen.
+The service desk receives and records user inquiries and coordinates the response. It provides the main point of contact for users.
+An evacuation-advisory system can directly affect human safety. A fault in that system matches the urgent category's definition and calls for an immediate response.
+Facility management covers physical buildings, equipment and infrastructure used by IT. It seeks to manage their ownership, operation and maintenance effectively.
+A chatbot can automate initial user support by gathering details and answering common incident questions. This can assist incident management in restoring normal service.
+Service level management monitors service performance and reviews achievement against the quantitative targets agreed in the SLA.
+Access controls and separation of duties are requirements that influence the system's design. They should be considered during requirements definition, before implementation decisions are fixed.
+IT governance is part of the company's overall governance. It helps ensure that IT direction and oversight support organizational objectives.
+An auditor should base findings on sufficient, relevant and appropriate evidence. Independent evidence-based judgment is essential to a reliable audit.
+Negative correlation means higher values of one variable tend to accompany lower values of the other. In option B, sales tend to decrease as temperature rises.
+Cash received from selling products is generated by the company's normal business operations. It belongs in cash flows from operating activities.
+The chief information officer, or CIO, has the senior responsibility for information systems and their relationship to business needs.
+Acquiring additional shares can increase an investor's ownership and voting influence. It is therefore a way for Company C to strengthen control over Company D.
+Clear definitions of roles, responsibilities and authority allow incompatible duties to be assigned to different people. This implements segregation of duties and mutual checking.
+Diversity refers to the presence of people with different backgrounds, experiences and characteristics. The list in the question describes that variety.
+Actual profit is (1,350 × 1,100) − (1,000 × 1,100) = 385,000 yen. Divide by the planned 500,000 yen profit and multiply by 100 to obtain 77%.
+IEEE 802.3 defines Ethernet networking, ISO 9001 concerns quality management, and ISO 14001 concerns environmental management. This matches option B's combination.
+Public domain software is not protected by copyright restrictions, for example because applicable rights have expired or been relinquished. It can therefore be copied and modified without the author's copyright permission.
+QR codes have position patterns that help a reader determine orientation. They can be read when rotated, rather than only in one fixed direction.
+Training in codes of conduct and a whistleblowing mechanism directly support compliance. Cultural support and environmental programs may be valuable, but they are not the compliance mechanisms asked for here.
+Using common components and procedures establishes shared specifications and methods. This is standardization and can make production more efficient.
+A non-disclosure agreement obliges the parties to protect each other's confidential information. It sets the confidentiality rules for their relationship.
+An achievement indicator measures the desired outcome. The share of employees reaching a target English-test score directly measures improved ability, rather than merely the effort spent studying.
+An alliance is cooperation between companies that retain their independence. Technology partnerships, shared sales or production arrangements, and joint ventures can be alliance methods.
+SWOT combines internal strengths and weaknesses with external opportunities and threats. The combined view supports decisions about future strategy.
+An opinion leader adopts a new product relatively early and influences others by sharing information and experience. This helps spread awareness beyond the initial buyer.
+One-to-one marketing tailors the offering or interaction to individual customer needs. It uses the person, rather than a broad undifferentiated market, as the focus.
+CRM emphasizes building and maintaining good customer relationships. Those relationships can improve retention and long-term profitability.
+A technology roadmap places expected technological developments and required capabilities on a timeline. It helps coordinate research direction and related technologies.
+Opt-in means the user explicitly agrees before receiving the communication or participating in the data collection. Prior affirmative agreement is the defining feature.
+An embedded system is built into a product to control its specific functions. Appliance controllers are common examples.
+Business-to-consumer commerce sells from a business to individual customers. Online bookstores and consumer shopping malls are B2C examples.
+ERP integrates core business processes and shared data across an organization. A package can support functions such as accounting, purchasing, inventory and sales.
+Search engine optimization, or SEO, improves a site's visibility in search results. It concerns organic search discoverability rather than only placing advertisements.
+An autonomous driving system must interpret its environment and make control decisions without the driver performing them. This is a suitable application of AI.
+Funding in exchange for a share of profits or dividends is investment-based crowdfunding. The funders receive an investment return.
+Business process management analyzes, measures and continuously improves workflows. Identifying process problems and refining the process is central to BPM.
+Groupware combines collaboration functions such as communication, information sharing and meetings. It supports people working together.
+A data flow diagram shows the relationships between data movement, processing, stores and external entities. It focuses on the flow and processing of data.
+An Internet service provider, or ISP, supplies access to the Internet. This is the service described in the question.
+Acceptance testing checks whether the delivered system meets the requirements agreed with the customer. It supports the customer's decision to accept the deliverables.
+An annual downtime limit describes an availability quality requirement, so it is non-functional. The other options describe business operations or functions the system must perform.
+An RFI gathers information about possible solutions, technologies and suppliers before detailed procurement decisions. Applicable technology and trends are appropriate information to request at this stage.
+An A/B test compares two versions using a chosen outcome measure. Running the new and conventional designs to compare paid-service signups is such a test.

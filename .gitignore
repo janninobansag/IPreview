@@ -1,3 +1,11 @@
-/doc/
-/tiiny-quiz-site/
-/ITPEC_IT_Passport_Quiz_TiinyHost.zip
+/node_modules/
+/dist/
+/.cache/
+/artifacts/
+/doc/**/*.pdf
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.env.*

@@ -1,0 +1,153 @@
+.source-question {
+  min-width: 0;
+  margin: 0 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.source-question summary {
+  cursor: pointer;
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.source-question summary span {
+  display: block;
+  padding-left: 15px;
+  font-size: 11px;
+}
+.source-images {
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  border-top: 1px solid var(--line);
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+}
+.source-images a {
+  display: block;
+  min-width: 0;
+  cursor: zoom-in;
+  background: #fff;
+}
+.source-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.question-transcript {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.question-transcript summary {
+  cursor: pointer;
+}
+.question-transcript p {
+  padding: 12px;
+  margin: 8px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 16px;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+.quiz-session-note {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.quiz-session-note span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.solution-equation {
+  margin-top: 12px;
+  padding: 15px;
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--canvas);
+  border: 1px solid var(--line);
+  font-family: Consolas, monospace;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.solution-steps {
+  padding-left: 23px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.recall-solution {
+  margin: 16px 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+.recall-boxes {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 5px;
+}
+.recall-boxes span {
+  display: grid;
+  place-items: center;
+  min-height: 32px;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.recall-boxes .detected {
+  color: #17653b;
+  background: #bde7ce;
+}
+.recall-boxes .missed {
+  color: #a52b29;
+  background: #f5c6c0;
+}
+.recall-solution figcaption {
+  margin-top: 9px;
+  color: var(--ink);
+  font-size: 13px;
+}
+.feedback-source {
+  margin-bottom: 0;
+  font-size: 11px;
+  opacity: 0.8;
+}
+.review-guide {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.question-card {
+  scroll-margin-top: 18px;
+}
+.question-card h2:focus {
+  outline: none;
+}
+.answer-choice {
+  overflow-wrap: anywhere;
+}
+.button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.legend {
+  flex-wrap: wrap;
+}
+.note-card a {
+  color: var(--teal-dark);
+  font-weight: 700;
+}
