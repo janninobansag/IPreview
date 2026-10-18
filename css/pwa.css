@@ -1,0 +1,74 @@
+.topbar {
+  height: auto;
+  min-height: 82px;
+  padding: 14px 0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.topbar-right {
+  position: relative;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.pwa-toggle {
+  position: relative;
+}
+.pwa-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  z-index: 40;
+  width: min(360px, calc(100vw - 32px));
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.pwa-panel h2 {
+  margin: 0;
+  font-size: 19px;
+}
+.pwa-panel p {
+  margin: 10px 0 16px;
+}
+.pwa-status {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+.pwa-status[data-ready='true'] {
+  color: var(--teal-dark);
+}
+.pwa-panel .button {
+  max-width: 100%;
+  white-space: normal;
+}
+#pwa-retry {
+  margin-top: 10px;
+}
+@media (max-width: 680px) {
+  .topbar-right {
+    gap: 8px;
+  }
+  .theme-toggle,
+  .quiz-menu-toggle {
+    margin-right: 0;
+  }
+  .pwa-toggle {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .topbar-right {
+    width: 100%;
+  }
+  #reset-button {
+    margin-left: auto;
+  }
+}

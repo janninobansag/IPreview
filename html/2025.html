@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f4f6f8" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="IPreview" />
     <meta
       name="description"
       content="Answer all 100 questions from the April 2025 ITPEC IT Passport paper."
@@ -27,6 +31,31 @@
           <span>ITPEC<span class="brand-light"> practice</span></span>
         </a>
         <div class="topbar-right">
+          <div class="pwa-menu">
+            <button
+              id="pwa-toggle"
+              class="quiz-menu-toggle pwa-toggle"
+              type="button"
+              aria-label="Install IPreview"
+              aria-controls="pwa-panel"
+              aria-expanded="false"
+              title="Install IPreview"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m-4-4 4 4 4-4M4 16v4h16v-4" />
+              </svg>
+            </button>
+            <section id="pwa-panel" class="pwa-panel" aria-labelledby="pwa-heading" hidden>
+              <h2 id="pwa-heading">Install IPreview</h2>
+              <p id="pwa-instructions"></p>
+              <button id="pwa-install" class="button button-accent" type="button" hidden>
+                Install app
+              </button>
+              <button id="pwa-retry" class="button button-outline" type="button" hidden>
+                Retry offline download
+              </button>
+            </section>
+          </div>
           <div class="quiz-menu">
             <button
               id="quiz-menu-toggle"
@@ -64,6 +93,7 @@
           <button id="reset-button" class="button button-quiet" type="button">Start over</button>
         </div>
       </header>
+      <p id="pwa-status" class="pwa-status" role="status" aria-live="polite"></p>
       <main>
         <section class="intro" aria-labelledby="page-title">
           <div class="eyebrow">
@@ -215,5 +245,6 @@
     <script src="../js/session-view.js"></script>
     <script src="../js/interface-controls.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/pwa-controls.js"></script>
   </body>
 </html>

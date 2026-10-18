@@ -26,7 +26,9 @@ const builtFiles = listFiles(outputDirectory);
 for (const filename of builtFiles) {
   const relative = path.relative(outputDirectory, filename).split(path.sep).join('/');
   assert.ok(
-    /^(index\.html|\.nojekyll|html\/|css\/|js\/|data\/quizzes\/|questions\/)/.test(relative),
+    /^(index\.html|\.nojekyll|manifest\.webmanifest|service-worker\.js|icons\/|html\/|css\/|js\/|data\/quizzes\/|questions\/)/.test(
+      relative,
+    ),
     'Unexpected file in the Vercel output: ' + relative,
   );
   assert.ok(!relative.endsWith('.pdf'), 'Reference PDFs must stay outside the deployment.');

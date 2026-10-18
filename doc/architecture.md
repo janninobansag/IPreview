@@ -25,6 +25,7 @@ The project root is the single editable source for the website.
 - session-view.js renders the question map, progress and score.
 - interface-controls.js owns the year menu and remembered theme.
 - app.js connects navigation, submission and restart actions.
+- pwa-controls.js handles installation, offline readiness and download retries.
 
 Each module uses the IPreview namespace instead of adding unrelated globals.
 Classic browser scripts preserve local file preview without a development server.
@@ -56,6 +57,28 @@ backend. It reads doc/exam-papers/ and doc/answer-keys/, and writes intermediate
 extracts under .cache/extracted-questions/.
 
 ## Deployment boundary
+
+### Offline application
+
+manifest.webmanifest defines the installable IPreview app. icons/ contains PNG
+install icons based on the existing four-square brand; tools/generate_icons.py
+can regenerate them using Pillow.
+
+tools/build-offline.cjs creates dist/service-worker.js from
+tools/templates/service-worker.js. It includes every deployed quiz, diagram,
+stylesheet, script and icon in a precache list. A content hash versions the cache
+whenever a deployed file or worker changes. Installation completes only after
+all assets download; failed downloads delete the partial cache. The worker serves
+known assets from its own version's cache, supports root and subdirectory hosting,
+and leaves external URLs alone. Google Fonts are optional; device fonts work offline.
+
+Updates wait for existing tabs to close before activating, then remove only
+IPreview caches for that scope. Saved answers remain in the existing localStorage
+keys. The UI verifies cached files before displaying Ready offline. Browser storage
+can be cleared by the user, so offline readiness is checked on each launch.
+
+PWA testing requires the built dist/ directory served through HTTPS or localhost.
+Run npm test for manifest, asset completeness, worker lifecycle and install controls.
 
 Vercel runs the Node build tool and publishes only dist/, as configured in
 vercel.json. The build copies an explicit list of browser asset directories and

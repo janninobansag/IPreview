@@ -5,9 +5,9 @@
   "description": "ITPEC IT Passport self-study quizzes",
   "scripts": {
     "build": "node tools/build-site.cjs",
-    "test": "npm run build && node tests/quiz.test.cjs && node tests/deployment.test.cjs",
-    "format": "prettier --write css js html index.html tools/templates tests tools/*.cjs package.json vercel.json README.md doc/*.md",
-    "format:check": "prettier --check css js html index.html tools/templates tests tools/*.cjs package.json vercel.json README.md doc/*.md",
+    "test": "npm run build && node tests/quiz.test.cjs && node tests/deployment.test.cjs && node tests/pwa-worker.test.cjs && node tests/pwa-controls.test.cjs",
+    "format": "prettier --write css js html index.html manifest.webmanifest tools/templates tests tools/*.cjs package.json vercel.json README.md doc/*.md",
+    "format:check": "prettier --check css js html index.html manifest.webmanifest tools/templates tests tools/*.cjs package.json vercel.json README.md doc/*.md",
     "package": "npm run build && python tools/package_site.py"
   },
   "devDependencies": {

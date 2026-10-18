@@ -3,12 +3,13 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const { buildOfflineWorker } = require('./build-offline.cjs');
 
 const projectRoot = path.resolve(__dirname, '..');
 const outputDirectory = path.join(projectRoot, 'dist');
 const pendingDirectory = path.join(projectRoot, '.cache', 'site-build');
-const staticDirectories = ['html', 'css', 'js', 'data/quizzes'];
-const staticFiles = ['index.html', '.nojekyll'];
+const staticDirectories = ['html', 'css', 'js', 'data/quizzes', 'icons'];
+const staticFiles = ['index.html', '.nojekyll', 'manifest.webmanifest'];
 
 function assertInsideProject(directory) {
   const relative = path.relative(projectRoot, path.resolve(directory));
@@ -72,6 +73,7 @@ function buildSite() {
   staticFiles.forEach(copyStaticFile);
   staticDirectories.forEach(copyStaticDirectory);
   const imageCount = copyReferencedDiagrams();
+  buildOfflineWorker(pendingDirectory);
 
   // The allowlist above keeps documentation, tools, tests and source data out of dist.
   assertInsideProject(outputDirectory);

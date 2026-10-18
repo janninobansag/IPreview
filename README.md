@@ -58,5 +58,24 @@ are included in the browser data because this is a self-study reviewer.
 Question citations link the material to ITPEC's past papers; study explanations
 are added reviewer content.
 
+## Install and study offline
+
+Open the deployed HTTPS website, then select the download icon in the navbar.
+Use **Install app** when offered. On iPhone or iPad, open the site in Safari and
+choose **Share → Add to Home Screen**.
+
+Stay online until the status reads **Ready offline**. All three quizzes, all 300
+questions, explanations and diagrams are then saved on that device, including
+years you have not opened yet. You can close the app, disconnect and reopen it
+to study, grade answers and keep your progress. External reference websites and
+PDF links on GitHub still need internet. Fonts fall back to device fonts offline.
+
+Clearing browser/site data removes downloaded quizzes and saved progress.
+New releases download when online and become active after all old app tabs close.
+
+To test the PWA locally, run `npm run build`, then
+`python -m http.server 8000 --directory dist` and open `http://localhost:8000`.
+Opening HTML through `file://` supports the quiz but cannot install a service worker.
+
 See [project architecture](doc/architecture.md) for module responsibilities,
 naming conventions and the deployment boundary.
