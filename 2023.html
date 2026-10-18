@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f8">
+  <meta name="description" content="Answer all 100 questions from the April 2023 ITPEC IT Passport paper.">
+  <title>2023 practice quiz | ITPEC Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-quiz-year="2023">
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="ITPEC Practice home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span>ITPEC<span class="brand-light"> practice</span></span>
+      </a>
+      <div class="topbar-right">
+        <div class="quiz-menu">
+          <button id="quiz-menu-toggle" class="quiz-menu-toggle" type="button" aria-label="Choose a practice quiz" aria-controls="quiz-menu-panel" aria-expanded="false" title="Choose a practice quiz">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>
+          </button>
+          <nav id="quiz-menu-panel" class="quiz-menu-panel" hidden aria-label="Practice quizzes">
+            <a href="2025.html" data-year="2025">2025 practice quiz</a>
+            <a href="2024.html" data-year="2024">2024 practice quiz</a>
+            <a href="2023.html" data-year="2023">2023 practice quiz</a>
+          </nav>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark mode</span></button>
+        <span class="save-state"><span class="save-dot"></span><span id="save-label">Progress saved for 2023</span></span>
+        <button id="reset-button" class="button button-quiet" type="button">Start over</button>
+      </div>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow"><span class="eyebrow-line"></span>IT PASSPORT EXAM PREP <span class="eyebrow-year">APRIL 2023</span></div>
+        <h1 id="page-title">2023 <span>practice quiz.</span></h1>
+        <p class="intro-copy">Work through all 100 questions from the April 2023 ITPEC paper. Check your answers, then select a question on the map to review its solution.</p>
+        <div class="intro-meta">
+          <div><strong>100</strong><span>questions</span></div><i aria-hidden="true"></i>
+          <div><strong>2023S</strong><span>IP paper</span></div><i aria-hidden="true"></i>
+          <div><strong>Anytime</strong><span>no timer</span></div>
+        </div>
+      </section>
+      <section class="quiz-layout" aria-label="2023 practice quiz">
+        <div class="quiz-column">
+          <div class="quiz-toolbar">
+            <div class="active-quiz-label"><span class="eyebrow">CURRENT QUIZ</span><strong>2023 practice quiz</strong></div>
+            <div class="progress-info"><span id="progress-count">Question 1 of 100</span><span id="answered-count">0 answered</span></div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div>
+          <article id="question-card" class="question-card" aria-labelledby="question-text">
+            <div class="question-topline"><span class="question-number" id="question-number">QUESTION 01</span><span class="topic-pill" id="source-label">(2023S, IP, Q1)</span></div>
+            <h2 id="question-text" tabindex="-1">Loading question…</h2>
+            <details id="source-question" class="source-question">
+              <summary>Original question &amp; diagrams <span>Tap an image to enlarge ↗</span></summary>
+              <div id="source-images" class="source-images"></div>
+            </details>
+            <details id="question-transcript" class="question-transcript" hidden><summary>Read the question as text</summary><p id="transcript-text"></p></details>
+            <fieldset id="answer-options" class="answer-options"><legend class="sr-only">Choose one answer</legend></fieldset>
+            <section id="question-feedback" class="question-feedback" hidden aria-live="polite"></section>
+            <div class="question-footer">
+              <button id="previous-button" class="button button-quiet" type="button">← Previous</button>
+              <span class="autosave-note">Your answers save automatically</span>
+              <button id="next-button" class="button button-dark" type="button">Next question →</button>
+            </div>
+          </article>
+          <div class="submit-row" id="submit-row"><div><strong>Ready to check your answers?</strong><span id="submit-hint">You can submit with unanswered questions.</span></div><button id="submit-button" class="button button-accent" type="button">Check my answers ↗</button></div>
+          <section id="results-panel" class="results-panel" hidden aria-label="Quiz results">
+            <div class="result-heading"><div class="result-score" id="result-score">0%</div><div><span class="eyebrow">YOUR RESULT</span><h2 id="result-title"></h2><p id="result-summary"></p></div></div>
+            <div class="result-actions"><button id="missed-button" class="button button-outline" type="button">Next missed question</button><button id="retry-button" class="button button-dark" type="button">Try again</button></div>
+            <p class="review-guide">Select any question on the map to see its correct answer and explanation beside the question.</p>
+          </section>
+        </div>
+        <aside class="navigator-card" aria-label="Question navigator">
+          <div class="navigator-header"><div><span class="eyebrow">2023 QUIZ</span><h2>Question map</h2></div><span class="navigator-count">100</span></div>
+          <p class="navigator-help" id="navigator-help">Select a number to jump to that question.</p>
+          <div id="question-grid" class="question-grid"></div><div class="legend" id="question-legend"></div>
+          <div class="quiz-session-note"><strong>April 2023 · IT Passport</strong><span>Your answers are saved separately for each year.</span></div>
+        </aside>
+      </section>
+      <section class="note-card"><span class="note-icon" aria-hidden="true">i</span><p><strong>About this quiz</strong><br>Questions and diagrams: 2023S ITPEC IP paper. Grading uses the official answer key. Study explanations are added for this reviewer. <a href="https://itpec.org/pastexamqa/ip.html" target="_blank" rel="noopener">Source: ITPEC ↗</a></p><span class="note-side">100 questions · self-paced</span></section>
+    </main>
+    <footer><span>ITPEC practice</span><span>Study at your own pace</span></footer>
+  </div>
+  <noscript><p>This quiz needs JavaScript enabled to display the questions and save your answers.</p></noscript>
+  <script src="quiz-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
