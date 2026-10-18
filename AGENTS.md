@@ -5,7 +5,7 @@
 - `html/` contains year pages; edit shared markup in `tools/templates/quiz-page.html`.
 - `js/` groups browser behavior by responsibility under the `IPreview` namespace. `css/styles.css` imports component, theme, and responsive styles; preserve their cascade order.
 - `data/source/` holds editable questions and explanations; `data/quizzes/` contains generated browser banks. `questions/` stores diagrams.
-- `tools/` contains build and import scripts; `tests/` contains automated checks. Keep documentation and reference PDFs in `doc/`, and working extracts in `.cache/`.
+- `tools/` contains build and import scripts; `tests/` contains automated checks. Keep documentation and reference PDFs in `doc/`; put portfolio images in `doc/portfolio/` and working extracts in `.cache/`.
 
 ## Build, Test, and Development Commands
 

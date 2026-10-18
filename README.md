@@ -3,6 +3,10 @@
 ITPEC IT Passport practice quizzes with 100 questions each for April 2025, 2024
 and 2023. The root home page opens the 2025 quiz.
 
+## Portfolio preview
+
+![IPreview practice quiz on desktop and mobile](doc/portfolio/ipreview-desktop-mobile.png)
+
 ## PDF study materials
 
 Click a link below to open the PDF on GitHub.

@@ -69,8 +69,17 @@ for (const filename of builtFiles.filter((name) => /quiz-\d{4}\.js$/.test(name))
 }
 const documentFiles = listFiles(path.join(projectRoot, 'doc'));
 assert.ok(
-  documentFiles.every((filename) => /\.(md|pdf|txt)$/i.test(filename)),
-  'doc must contain only documentation and reference documents.',
+  documentFiles.every((filename) => {
+    const relative = path
+      .relative(path.join(projectRoot, 'doc'), filename)
+      .split(path.sep)
+      .join('/');
+    return (
+      /\.(md|pdf|txt)$/i.test(filename) ||
+      (/^portfolio\//i.test(relative) && /\.(png|jpe?g|webp)$/i.test(filename))
+    );
+  }),
+  'doc must contain documentation, references, and portfolio image files only.',
 );
 const configuration = JSON.parse(fs.readFileSync(path.join(projectRoot, 'vercel.json'), 'utf8'));
 assert.equal(configuration.outputDirectory, 'dist');

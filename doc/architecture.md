@@ -12,7 +12,7 @@ The project root is the single editable source for the website.
 | data/source/  | Editable imported questions, explanations and solution overrides | No                     |
 | tools/        | Build, packaging and optional PDF-import scripts                 | No                     |
 | tests/        | Quiz behavior and deployment checks                              | No                     |
-| doc/          | Markdown documentation and local reference PDFs                  | No                     |
+| doc/          | Markdown documentation, reference PDFs and portfolio mockups     | No                     |
 | artifacts/    | Generated Tiiny.host ZIP files                                   | No                     |
 | .cache/       | Working extracts and the original project backup                 | No                     |
 | dist/         | Generated deployment output                                      | This is the deployment |
