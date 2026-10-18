@@ -35,6 +35,14 @@ for (const filename of builtFiles) {
 }
 for (const filename of builtFiles.filter((name) => name.endsWith('.html'))) {
   const document = new JSDOM(fs.readFileSync(filename, 'utf8')).window.document;
+  if (document.body.dataset.quizYear) {
+    const shortcut = document.querySelector('.mobile-map-link');
+    assert.ok(shortcut, 'Quiz must offer a shortcut to the map on small screens.');
+    assert.ok(
+      document.querySelector(shortcut.getAttribute('href')),
+      'Map shortcut target must exist.',
+    );
+  }
   for (const element of document.querySelectorAll('[src], link[href], a[href]')) {
     const reference = element.getAttribute('src') || element.getAttribute('href');
     if (!reference || /^(https?:|#)/.test(reference)) continue;
