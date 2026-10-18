@@ -3,6 +3,24 @@
 ITPEC IT Passport practice quizzes with 100 questions each for April 2025, 2024
 and 2023. The root home page opens the 2025 quiz.
 
+## PDF study materials
+
+Click a link below to open the PDF on GitHub.
+
+- [ITPEC IP 2024–2025 reviewer](doc/reviewer/pdf/ITPEC_IP_2024_2025_Reviewer.pdf)
+
+### Exam papers and answer keys
+
+| Exam session | Questions                                                | Answers                                            |
+| ------------ | -------------------------------------------------------- | -------------------------------------------------- |
+| 2025 Spring  | [Question paper](doc/exam-papers/2025S_IP_Questions.pdf) | [Answer key](doc/answer-keys/2025S_IP_Answers.pdf) |
+| 2024 Autumn  | [Question paper](doc/exam-papers/2024A_IP_Questions.pdf) | —                                                  |
+| 2024 Spring  | [Question paper](doc/exam-papers/2024S_IP_Questions.pdf) | [Answer key](doc/answer-keys/2024S_IP_Answer.pdf)  |
+| 2023 Autumn  | [Question paper](doc/exam-papers/2023A_IP_Questions.pdf) | —                                                  |
+| 2023 Spring  | [Question paper](doc/exam-papers/2023S_IP_Questions.pdf) | [Answer key](doc/answer-keys/2023S_IP_Answer.pdf)  |
+
+Additional reference: [2026 Spring answers PDF](doc/exam-papers/2026S_IP_Answers.pdf).
+
 ## Develop
 
 - Open index.html for a local preview, or serve the project with a static server.
