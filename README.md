@@ -1,13 +1,21 @@
 # ITPEC Practice Quiz
 
-A static IT Passport practice site with 100 questions each for the 2025, 2024, and 2023 papers. The home page opens the 2025 quiz; the menu links directly to each year's quiz.
+A static IT Passport practice site with 100 questions each for the 2025, 2024, and 2023 papers. The home page forwards to the 2025 quiz.
+
+## Folder layout
+
+- `html/` contains the three year pages and the 2025 home page.
+- `css/` contains the site styles.
+- `js/` contains the quiz behavior and question data.
+- `questions/` contains the diagrams used by the quizzes.
+- `index.html` at the repository root forwards visitors to `html/index.html` so static hosts can use the site as their home page.
+
+## Deploy with Vercel
+
+Import this GitHub repository in Vercel. Use **Other** as the Framework Preset, leave the Build Command blank, and serve the repository root.
 
 ## Run locally
 
 Open `index.html` in a browser. No server or build step is required.
 
-## Publish with GitHub Pages
-
-In the repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/(root)`, then save. GitHub will show the live site link on that page after deployment.
-
-Answers and progress are stored in the visitor's browser. Each question includes a source citation and a study explanation. Study explanations are custom reviewer content, not official ITPEC explanations.
+Answers and progress are stored in the visitor's browser. Correct answers are included in the client-side quiz data, as expected for a self-study practice reviewer. Every question has an ITPEC source citation; study explanations are custom reviewer content.

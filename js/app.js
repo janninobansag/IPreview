@@ -75,10 +75,10 @@ function renderQuestion() {
   refs.images.replaceChildren();
   q.images.forEach((src, i) => {
     const link = document.createElement('a');
-    link.href = src; link.target = '_blank'; link.rel = 'noopener';
+    link.href = `../${src}`; link.target = '_blank'; link.rel = 'noopener';
     link.setAttribute('aria-label', `Enlarge original question ${q.number}${q.images.length > 1 ? `, part ${i+1}` : ''}`);
     const image = document.createElement('img');
-    image.src = src;
+    image.src = `../${src}`;
     image.alt = `Original ${year}S IP question ${q.number}${q.images.length > 1 ? `, part ${i+1}` : ''}, including its diagrams and options`;
     image.decoding = 'async';
     link.append(image); refs.images.append(link);
