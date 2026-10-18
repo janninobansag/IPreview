@@ -1,4 +1,4 @@
-"""Regenerate install icons from the site's four-square brand mark (requires Pillow)."""
+"""Regenerate tab and install icons from the four-square brand mark (requires Pillow)."""
 from pathlib import Path
 
 from PIL import Image, ImageDraw
@@ -20,6 +20,7 @@ def generate_icons():
             color = "#32b8a7" if row == column else "#83d4c9"
             drawing.rounded_rectangle((x, y, x + block, y + block), radius=70, fill=color)
     for filename, dimension in [
+        ("favicon-32.png", 32),
         ("icon-192.png", 192),
         ("icon-512.png", 512),
         ("icon-maskable-512.png", 512),
