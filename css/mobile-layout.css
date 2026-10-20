@@ -128,3 +128,28 @@
     font-size: 20px;
   }
 }
+
+footer {
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+.footer-feedback {
+  color: var(--teal-dark);
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.footer-feedback:hover {
+  text-decoration: underline;
+}
+.footer-feedback:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+@media (max-width: 680px) {
+  footer {
+    justify-content: flex-start;
+    column-gap: 14px;
+    font-size: 13px;
+  }
+}
