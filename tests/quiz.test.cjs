@@ -40,7 +40,7 @@ const doc = first.window.document;
 const menuLinks = [...doc.querySelectorAll('#quiz-menu-panel a')];
 assert.deepEqual(
   menuLinks.map((a) => a.textContent),
-  ['2025 practice quiz', '2024 practice quiz', '2023 practice quiz'],
+  ['2025 practice quiz', '2024 practice quiz', '2023 practice quiz', '2022 practice quiz'],
 );
 assert.equal(menuLinks.filter((a) => a.getAttribute('aria-current') === 'page').length, 1);
 doc.querySelector('#quiz-menu-toggle').click();
@@ -81,7 +81,15 @@ assert.equal(
   shared['itpec-ip-2025S-progress-v1'],
 );
 assert.ok(anotherYear.window.localStorage.getItem('itpec-ip-2024S-progress-v1'));
-for (const dom of [first, restored, anotherYear]) dom.window.close();
+const autumn = page('2022', shared);
+assert.equal(autumn.window.document.querySelector('#answered-count').textContent, '0 answered');
+clickAnswer(autumn, 2);
+assert.ok(autumn.window.localStorage.getItem('itpec-ip-2022A-progress-v1'));
+assert.equal(
+  autumn.window.localStorage.getItem('itpec-ip-2025S-progress-v1'),
+  shared['itpec-ip-2025S-progress-v1'],
+);
+for (const dom of [first, restored, anotherYear, autumn]) dom.window.close();
 console.log(
   'Menu, correct/wrong/skipped map states, inline feedback, persistence, year isolation and dark mode passed.',
 );
@@ -104,14 +112,14 @@ assert.equal(withoutStorage.window.document.documentElement.dataset.theme, 'dark
 withoutStorage.window.close();
 console.log('Corrupted saved data and disabled browser storage are handled.');
 
-for (const year of ['2025', '2024', '2023']) {
+for (const year of ['2025', '2024', '2023', '2022']) {
   const dom = page(year);
   const qs = dom.window.ITPEC_QUIZZES[year].questions;
   const document = dom.window.document;
   qs.forEach((q, index) => {
     assert.equal(
       document.querySelector('#source-label').textContent,
-      `(${year}S, IP, Q${index + 1})`,
+      `(${year}${year === '2022' ? 'A' : 'S'}, IP, Q${index + 1})`,
     );
     assert.equal(document.querySelectorAll('#answer-options input').length, 4);
     if (q.images.length) {
@@ -138,3 +146,69 @@ for (const year of ['2025', '2024', '2023']) {
   dom.window.close();
   console.log(`${year}: all 100 questions render, grade correctly, and reset successfully.`);
 }
+
+const review2022 = page('2022');
+clickAnswer(review2022, 0); // Q1: wrong A; official answer C
+review2022.window.document.querySelector('#submit-button').click();
+assert.ok(
+  review2022.window.document.querySelector('#question-grid button').classList.contains('incorrect'),
+);
+assert.match(
+  review2022.window.document.querySelector('#question-feedback').textContent,
+  /16 \+ 8 = 24/,
+);
+assert.match(review2022.window.document.querySelector('#question-feedback').textContent, /2022A/);
+review2022.window.close();
+
+const imagePage = page('2025');
+const imageDocument = imagePage.window.document;
+const viewer = imageDocument.querySelector('#image-viewer');
+viewer.showModal = function () {
+  this.setAttribute('open', '');
+};
+viewer.close = function () {
+  this.removeAttribute('open');
+  this.dispatchEvent(new imagePage.window.Event('close'));
+};
+const imageApp = imagePage.window.IPreview;
+const secondImage = imageApp.questions.find(
+  (question, index) => index > 0 && question.images.length,
+).images[0];
+imageApp.questions[0].images.push(secondImage);
+imageApp.renderQuestion();
+clickAnswer(imagePage, 3);
+const selectedAnswer = imageApp.state.answers[0];
+const thumbnails = imageDocument.querySelectorAll('#source-images a');
+assert.equal(thumbnails.length, 2);
+thumbnails[0].click();
+assert.equal(viewer.open, true);
+assert.equal(imageDocument.activeElement.id, 'image-viewer-close');
+assert.equal(
+  imageDocument.querySelector('#image-viewer-title').textContent,
+  'Question 1 image, part 1',
+);
+imageDocument.querySelector('#image-viewer-zoom').click();
+assert.equal(viewer.classList.contains('is-zoomed'), true);
+assert.equal(imageDocument.querySelector('#image-viewer-zoom').textContent, 'Fit screen');
+imageDocument.querySelector('#image-viewer-close').click();
+assert.equal(viewer.open, false);
+assert.equal(imageDocument.activeElement, thumbnails[0]);
+thumbnails[1].click();
+assert.equal(
+  imageDocument.querySelector('#image-viewer-image').getAttribute('src'),
+  thumbnails[1].href,
+);
+viewer.dispatchEvent(new imagePage.window.Event('cancel', { cancelable: true }));
+assert.equal(viewer.open, false);
+thumbnails[1].click();
+viewer.click();
+assert.equal(viewer.open, false);
+assert.equal(imageApp.state.answers[0], selectedAnswer);
+assert.equal(imageDocument.querySelector('#answered-count').textContent, '1 answered');
+imageDocument.querySelector('#theme-toggle').click();
+thumbnails[0].click();
+assert.equal(imageDocument.documentElement.dataset.theme, 'dark');
+assert.equal(viewer.open, true);
+viewer.close();
+imagePage.window.close();
+console.log('Image viewer close, zoom, multiple parts, focus, quiz state, and dark mode passed.');

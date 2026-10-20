@@ -3,7 +3,8 @@
   const year = document.body.dataset.quizYear;
   const quiz = window.ITPEC_QUIZZES[year];
   const questions = quiz.questions;
-  const PROGRESS_STORAGE_KEY = `itpec-ip-${year}S-progress-v1`;
+  const sessionCode = quiz.sessionCode || 'S';
+  const PROGRESS_STORAGE_KEY = `itpec-ip-${year}${sessionCode}-progress-v1`;
   const THEME_STORAGE_KEY = 'itpec-practice-theme-v1';
   const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
   const state = { answers: {}, current: 0, submitted: false };
@@ -19,6 +20,12 @@
     questionText: getElement('question-text'),
     sourceQuestion: getElement('source-question'),
     sourceImages: getElement('source-images'),
+    imageViewer: getElement('image-viewer'),
+    imageViewerTitle: getElement('image-viewer-title'),
+    imageViewerImage: getElement('image-viewer-image'),
+    imageViewerScroll: getElement('image-viewer-scroll'),
+    imageViewerZoom: getElement('image-viewer-zoom'),
+    imageViewerClose: getElement('image-viewer-close'),
     transcript: getElement('question-transcript'),
     transcriptText: getElement('transcript-text'),
     answerOptions: getElement('answer-options'),
@@ -102,6 +109,7 @@
   }
   Object.assign(app, {
     year,
+    sessionCode,
     quiz,
     questions,
     state,

@@ -45,7 +45,7 @@ for (const filename of builtFiles.filter((name) => name.endsWith('.html'))) {
   }
   for (const element of document.querySelectorAll('[src], link[href], a[href]')) {
     const reference = element.getAttribute('src') || element.getAttribute('href');
-    if (!reference || /^(https?:|#)/.test(reference)) continue;
+    if (!reference || /^(https?:|mailto:|#)/.test(reference)) continue;
     assertLocalFile(path.resolve(path.dirname(filename), reference));
   }
 }

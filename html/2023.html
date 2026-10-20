@@ -75,6 +75,7 @@
               <a href="2025.html" data-year="2025">2025 practice quiz</a>
               <a href="2024.html" data-year="2024">2024 practice quiz</a>
               <a href="2023.html" data-year="2023">2023 practice quiz</a>
+              <a href="2022.html" data-year="2022">2022 practice quiz</a>
             </nav>
           </div>
           <button
@@ -245,6 +246,20 @@
         >
       </footer>
     </div>
+    <dialog id="image-viewer" class="image-viewer" aria-labelledby="image-viewer-title">
+      <div class="image-viewer-toolbar">
+        <h2 id="image-viewer-title">Question image</h2>
+        <div class="image-viewer-actions">
+          <button id="image-viewer-zoom" type="button" aria-pressed="false">Actual size</button>
+          <button id="image-viewer-close" class="image-viewer-close" type="button">
+            Close <span aria-hidden="true">×</span>
+          </button>
+        </div>
+      </div>
+      <div id="image-viewer-scroll" class="image-viewer-scroll">
+        <img id="image-viewer-image" alt="" />
+      </div>
+    </dialog>
     <noscript
       ><p>
         This quiz needs JavaScript enabled to display the questions and save your answers.

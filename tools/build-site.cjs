@@ -79,7 +79,7 @@ function buildSite() {
   assertInsideProject(outputDirectory);
   if (fs.existsSync(outputDirectory)) fs.rmSync(outputDirectory, { recursive: true, force: true });
   fs.renameSync(pendingDirectory, outputDirectory);
-  console.log('Built dist with 3 quizzes and ' + imageCount + ' referenced diagrams.');
+  console.log('Built dist with 4 quizzes and ' + imageCount + ' referenced diagrams.');
 }
 
 if (require.main === module) buildSite();

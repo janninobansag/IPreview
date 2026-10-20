@@ -1,0 +1,100 @@
+The five squares use place values 16, 8, 4, 2, and 1 from left to right. The first two black squares total 16 + 8 = 24.
+Five lamps have 2^5 = 32 on/off patterns. Remove the all-off pattern and five one-lamp patterns: 32 - 1 - 5 = 26.
+01011010 is 90 and 01101011 is 107. Their sum is 197, which is 11000101 in binary.
+A continuously varying physical quantity is analog; discrete numerical values are digital. A music CD stores digital data.
+Start with x = 2 and y = 3. The first cycle makes y = 2 and x = 4; the second makes y = 1 and x = 5, then stops.
+XML marks the structure of a document by enclosing elements in opening and closing tags.
+To output Z first, X and Y must both be pushed before Z. After Z is popped, Y is above X, so X cannot come out before Y.
+From state 1, 11 mod 3 = 2, so move two states clockwise to 3. Then 33 mod 3 = 0, so move one state clockwise to 4.
+Putting E on the full desk evicts A. After C, B, and D are reused, E is least recently used and is evicted when F arrives.
+For the same CPU architecture, more clock cycles per second generally allow more processing work per second.
+A CPU cache holds frequently accessed data close to the processor, reducing the effective time needed to access main memory.
+NFC is short-range wireless communication, typically within about 10 cm, used with IC cards and tags.
+CPU cache memory has a shorter access time than main memory, SSDs, or hard disks.
+A hot standby backup is already running or ready to take over immediately when the primary system fails.
+A bottleneck is the component whose limited speed constrains the throughput of the entire system.
+The bathtub curve falls during early failures, stays nearly flat during random failures, and rises as parts wear out.
+Multitasking shares CPU time among multiple processes so they can make progress concurrently.
+The BIOS initializes hardware and starts the operating system; the OS then launches resident applications.
+A preserved copy provides a baseline. Comparing it with the modified file reveals the actual changed contents.
+Firefox, Linux, and Thunderbird are open-source software; Microsoft Word and Windows are proprietary.
+Activation validates a software license using a product identifier and information about the user's device.
+C2 must move to each branch when copied, while $C and $E keep the average range on the branch columns. The row remains relative for each month; a below-average value displays X.
+Global climate modeling demands large-scale scientific calculations, a typical supercomputer workload.
+Augmented reality overlays computer-generated information onto a view of the real environment.
+MPEG formats can compress moving video and audio together; BMP, GIF, and JPEG are image formats.
+Exclusive control, such as locking, prevents simultaneous database operations from conflicting and preserves consistency.
+The joined result needs the customer name and representative plus links to both the employee and region tables. The Customers table therefore carries Employee code and Region code.
+Keep customer details, product details, and orders in separate tables. Orders refer to customers and products by their IDs instead of duplicating their descriptive fields.
+Each publishing company has many authors, and each author has many books. Both arrows therefore point from the one side toward the many side.
+A subnet mask marks which bits of an IP address represent the network and which bits identify a host on that network.
+POP is used by an email client to retrieve messages from a mail server.
+The provider's lines connect geographically separated head and branch offices, making this a wide-area network.
+The default gateway is the router that forwards traffic from the local network toward other networks.
+LPWA is designed for low-power, long-range wireless communication, including IoT devices.
+Information security preserves confidentiality, integrity, and availability. Vulnerability is a weakness, not one of those properties.
+Disconnect the infected PC from networks immediately to limit possible spread or communication with an attacker.
+Poor password management is an exploitable weakness. The other options describe threats or attack methods.
+Matrix authentication asks for characters at remembered positions in a displayed grid or table.
+Chain mail urges recipients to forward it widely, which creates unnecessary traffic and server load.
+The number of passwords rises from 26^4 to 26^6. The factor is 26^2 = 676.
+A digital signature links the signer to the order data and helps prove the order's origin and integrity, supporting non-repudiation.
+Ransomware makes files unavailable, often by encrypting them, then demands payment for decryption.
+Encrypting the connection protects passwords in transit. Limiting repeated login attempts slows a brute-force attack.
+Lower false rejection makes legitimate users less likely to be blocked; lower false acceptance makes impostors less likely to enter.
+Risk assessment begins by identifying risks, before analyzing or evaluating them and choosing treatment.
+A migration plan should specify how and when old and new systems run in parallel during the transition.
+During acceptance, users check that the finished software meets their requirements and is usable.
+Maintenance occurs after deployment: a defect reported in the live production system is corrected.
+The user department should confirm that the new system supports the business requirements it will use.
+Project staffing typically rises and later falls, matching graph I. Fixing a change becomes more expensive later, matching graph II.
+Evaluation standards let the project compare prospective suppliers consistently when selecting a product or service provider.
+A work breakdown structure divides all project work into a hierarchy of manageable work units.
+Six people need 6 x 5 / 2 = 15 one-to-one links; ten people need 10 x 9 / 2 = 45. The number triples.
+Stakeholders include anyone who affects or is affected by the project, including users and development managers.
+Agreeing in advance on how to prioritize and handle changes controls their effect on scope, schedule, and quality.
+Adding test members changes personnel expenses, so the cost estimate and cost plan must be updated.
+Turn on the PC (3 s), walk to the printer (60 s), start it (3 s), and walk back (60 s). The PC login screen finishes at 153 s; login takes 10 s and application startup 60 s, ending at 223 s.
+IT service management manages service quality and operational performance, including availability.
+Problem management investigates an incident's underlying cause and works to prevent recurrence.
+Monitoring failures helps detect outages promptly so service can be restored, improving availability.
+Recovery time measures reliability; query reception hours belong to the service desk; backup retention belongs to data management.
+Agile development adds and refines functions through repeated short cycles, using feedback from each iteration.
+Separating purchasing from payment prevents one person from controlling both sides of a transaction, strengthening internal controls.
+A system auditor independently and professionally evaluates controls over information-system risks.
+A continuity plan can include backups, emergency power, redundant communications, and practiced recovery procedures. All four activities apply.
+CSR means corporate social responsibility: considering social and environmental duties alongside profit.
+OJT is training through actual work. Joining a development project builds design skills while doing the job.
+The CIO is responsible for aligning company-wide information-system planning with business strategy.
+Brainstorming welcomes and builds on ideas without criticism or blame during idea generation.
+New price = 800 yen; new quantity = 840. Sales are 672,000 yen, variable cost is 168,000 yen, and fixed cost is 300,000 yen, leaving 204,000 yen.
+A BCP identifies a substitute office, critical work, and procedures so the company can continue operating if the head office is lost.
+HR Tech applies technologies such as AI and IoT to recruiting, personnel evaluation, and other human-resource work.
+Buying the software package grants a right to use the program under its license, not ownership of its copyright.
+Reusing downloaded HTML source to make another web page copies protected expression without permission; the other cases use ideas or one's own program.
+Outside directors add independent oversight of management decisions and strengthen corporate governance.
+Compliance is adherence to laws and rules, so employee education about those requirements directly supports it.
+ISO develops international standards, including standards for information security and quality management systems.
+A QR code stores data in a two-dimensional grid of dark and light modules.
+ERP integrates enterprise resources and processes such as production, sales, accounting, and human resources.
+A balanced scorecard measures strategy from financial, customer, internal-process, and learning-and-growth perspectives.
+PPM compares products by market growth and relative market share to help prioritize investment.
+Supply chain management coordinates procurement through production and sales to optimize supply.
+Benchmarking measures a company's products or services against strong competitors to identify improvements.
+A joint venture is a new business created through investment and collaboration by multiple companies.
+A technology roadmap shows expected technologies and when they are likely to be developed or adopted.
+RFID reads data from an electronic tag attached to a parcel, allowing its shipping record to be tracked.
+Build-to-order production begins after an order, avoiding excessive finished-goods inventory but delaying shipment.
+A scanner converts paper documents and drawings into digital image files for sharing.
+Just-in-time supply delivers parts when needed, reducing component inventory and work in progress.
+CAD means computer-aided design: using computers to design buildings or industrial products.
+A neural network is a computational model inspired by interconnected neurons in the human brain.
+Deep learning uses layered neural-network models to learn features from large volumes of data.
+Information literacy includes finding the information needed for a task and using it appropriately to meet a goal.
+Gamification uses points, badges, and similar game elements to motivate people toward desired goals.
+Reception writes the arriving guest to the guest list. Seating then reads that list and seating availability, as shown by the arrow directions in D.
+Teleworking uses information technology to work flexibly from a location outside a fixed office.
+Issue the RFP, evaluate proposals, select the contractor, and then conclude the contract: A, D, C, B.
+IoT connects sensor-equipped devices to the Internet so they can exchange information directly.
+The information-systems department generally sends vendors the system requirements and procurement conditions in an RFP.
+Requirements definition clarifies the functions users and stakeholders need and establishes agreement before development.

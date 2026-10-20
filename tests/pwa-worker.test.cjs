@@ -32,7 +32,7 @@ function createWorker(scope, failDownload = false) {
               fs.existsSync(path.join(root, relative)),
               'Cached asset must exist: ' + relative,
             );
-            if (failDownload && relative === 'html/2023.html') throw new Error('Network failed');
+            if (failDownload && relative === 'html/2022.html') throw new Error('Network failed');
             store.set(request.url, new Response('cached: ' + relative));
           }
         },
@@ -115,7 +115,7 @@ function createWorker(scope, failDownload = false) {
       expected.sort(),
       'Every deployed asset must be cached',
     );
-    assert.equal([...cache.keys()].filter((url) => url.endsWith('.webp')).length, 54);
+    assert.equal([...cache.keys()].filter((url) => url.endsWith('.webp')).length, 154);
     const old = 'ipreview:' + scope + ':old';
     worker.stores.set(old, new Map());
     worker.stores.set('another-app', new Map());
@@ -148,7 +148,7 @@ function createWorker(scope, failDownload = false) {
       });
     await message('CHECK_OFFLINE');
     assert.equal(messages.at(-1).ready, true);
-    cache.delete(new URL('html/2023.html', scope).href);
+    cache.delete(new URL('html/2022.html', scope).href);
     await message('CHECK_OFFLINE');
     assert.equal(messages.at(-1).ready, false);
     await message('REPAIR_OFFLINE');

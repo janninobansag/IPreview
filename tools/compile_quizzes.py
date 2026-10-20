@@ -32,6 +32,19 @@ def load_question_bank():
     return bank
 
 
+def render_quiz_page(template, year, quiz):
+    month = quiz["session"].split()[0]
+    values = {
+        "{{YEAR}}": year,
+        "{{SESSION_CODE}}": quiz.get("sessionCode", "S"),
+        "{{SESSION_MONTH}}": month,
+        "{{SESSION_MONTH_UPPER}}": month.upper(),
+    }
+    for token, value in values.items():
+        template = template.replace(token, value)
+    return template
+
+
 def compile_quizzes():
     bank = load_question_bank()
     template = TEMPLATE.read_text(encoding="utf-8")
@@ -46,12 +59,12 @@ def compile_quizzes():
         )
         (QUIZ_DATA / f"quiz-{year}.js").write_text(script, encoding="utf-8", newline="\n")
         (PAGE_DIRECTORY / f"{year}.html").write_text(
-            template.replace("{{YEAR}}", year), encoding="utf-8", newline="\n"
+            render_quiz_page(template, year, quiz), encoding="utf-8", newline="\n"
         )
     (PAGE_DIRECTORY / "index.html").write_text(
-        template.replace("{{YEAR}}", "2025"), encoding="utf-8", newline="\n"
+        render_quiz_page(template, "2025", bank["2025"]), encoding="utf-8", newline="\n"
     )
-    print("Compiled three question banks and four quiz pages.")
+    print(f"Compiled {len(bank)} question banks and {len(bank) + 1} quiz pages.")
 
 
 if __name__ == "__main__":
