@@ -4,7 +4,7 @@ The project root is the single editable source for the website.
 
 | Location      | Purpose                                                          | Published by Vercel    |
 | ------------- | ---------------------------------------------------------------- | ---------------------- |
-| html/         | Quiz pages for 2025, 2024 and 2023                               | Yes                    |
+| html/         | Quiz pages for 2025, 2024, 2023 and 2022                         | Yes                    |
 | css/          | Styles grouped by component, theme and screen layout             | Yes                    |
 | js/           | Browser behavior grouped by responsibility                       | Yes                    |
 | data/quizzes/ | One browser question bank per year                               | Yes                    |
@@ -37,7 +37,8 @@ answers and theme preferences survive the refactor.
 
 Browser script and CSS filenames use kebab-case. JavaScript functions and variables
 use camelCase, and constants use UPPER_SNAKE_CASE. Python tools use snake_case.
-Year page filenames remain 2025.html, 2024.html and 2023.html to preserve links.
+Year page filenames remain 2025.html, 2024.html and 2023.html to preserve links;
+2022.html opens the October 2022 quiz.
 Files are split at responsibility boundaries, usually below 250 lines. Static
 question data may be longer because each year is a cohesive dataset.
 
@@ -48,7 +49,7 @@ in tools/templates/quiz-page.html. Question content is maintained in data/source
 After changing question content or the page template, run Python with
 tools/compile_quizzes.py, then run npm run format.
 
-Run npm test to build the site and verify all 300 questions, grading, navigation,
+Run npm test to build the site and verify all 400 questions, grading, navigation,
 saved progress, dark mode and local asset links. Run npm run format:check to
 check formatting. Run npm run package to build artifacts/ipreview-tiiny-host.zip.
 

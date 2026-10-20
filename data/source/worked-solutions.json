@@ -151,5 +151,46 @@
     "72": {
       "equation": "Actual profit = (1,350 × 1,100) − (1,000 × 1,100)\n              = 385,000 yen\n385,000 ÷ 500,000 × 100 = 77%"
     }
+  },
+  "2022": {
+    "1": {
+      "equation": "Square weights: 16 | 8 | 4 | 2 | 1\nBlack | Black | White | White | White\n16 + 8 = 24"
+    },
+    "2": {
+      "equation": "All patterns: 2^5 = 32\nAll off: 1 pattern\nExactly one on: 5 patterns\nTwo or more on: 32 - 1 - 5 = 26"
+    },
+    "3": {
+      "equation": "01011010 (90) + 01101011 (107)\n= 11000101 (197)"
+    },
+    "5": {
+      "equation": "Start: x = 2, y = 3\nCycle 1: y = 2, x = 4\nCycle 2: y = 1, x = 5\nStop at y = 1."
+    },
+    "8": {
+      "equation": "State 1: 11 mod 3 = 2 -> two clockwise steps -> 3\nState 3: 33 mod 3 = 0 -> one clockwise step -> 4"
+    },
+    "9": {
+      "equation": "A B C D -> add E: evict A\nE C B D -> add F: evict E"
+    },
+    "22": {
+      "equation": "IF(C2 < AVERAGE($C2:$E2), 'X', 'O')\nC2 follows the branch; $C:$E stays on the three branch columns."
+    },
+    "40": {
+      "equation": "26^6 / 26^4 = 26^2 = 676"
+    },
+    "50": {
+      "equation": "Staff count: graph I (rises, then falls)\nCost per correction: graph II (rises later)"
+    },
+    "53": {
+      "equation": "6 people: 6 x 5 / 2 = 15 links\n10 people: 10 x 9 / 2 = 45 links\n45 / 15 = 3 times"
+    },
+    "57": {
+      "equation": "PC power: 0-3 s\nWalk to printer and start it: 3-66 s\nWalk back: 66-126 s\nPC login screen ready: 153 s\nLogin: 153-163 s\nApplication startup: 163-223 s"
+    },
+    "70": {
+      "equation": "New price: 1,000 x 0.8 = 800 yen\nNew quantity: 700 x 1.2 = 840\nSales: 800 x 840 = 672,000 yen\nVariable cost: 200 x 840 = 168,000 yen\nProfit: 672,000 - 168,000 - 300,000 = 204,000 yen"
+    },
+    "95": {
+      "equation": "Reception -> Guest list\nGuest list -> Show to seat\nSeating availability -> Show to seat"
+    }
   }
 }

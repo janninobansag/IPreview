@@ -36,6 +36,94 @@
   height: auto;
   max-width: 100%;
 }
+.image-viewer-open,
+.image-viewer-open body {
+  overflow: hidden;
+}
+.image-viewer {
+  box-sizing: border-box;
+  width: min(1120px, calc(100vw - 20px));
+  max-width: none;
+  height: min(900px, calc(100vh - 20px));
+  height: min(900px, calc(100dvh - 20px));
+  max-height: none;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.image-viewer[open] {
+  display: flex;
+  flex-direction: column;
+}
+.image-viewer::backdrop {
+  background: rgba(5, 15, 23, 0.82);
+}
+.image-viewer-toolbar {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: calc(8px + env(safe-area-inset-top, 0px)) 12px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.image-viewer-toolbar h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.image-viewer-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.image-viewer-actions button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--canvas);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.image-viewer-actions .image-viewer-close {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+.image-viewer-close span {
+  margin-left: 4px;
+  font-size: 20px;
+  line-height: 1;
+}
+.image-viewer-actions button:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+}
+.image-viewer-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: #fff;
+}
+.image-viewer-scroll img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.image-viewer.is-zoomed .image-viewer-scroll img {
+  max-width: none;
+}
 .question-transcript {
   margin: 0 0 18px;
   color: var(--muted);

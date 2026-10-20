@@ -1,7 +1,8 @@
-"""Import the three April ITPEC IP papers and their official answer keys."""
+"""Import the selected ITPEC IP papers and their official answer keys."""
 from pathlib import Path
 import json
 import re
+import sys
 import pdfplumber
 from pypdf import PdfReader
 from PIL import Image, ImageChops
@@ -11,7 +12,11 @@ EXAM_PAPER_DIRECTORY = ROOT / 'doc' / 'exam-papers'
 ANSWER_KEY_DIRECTORY = ROOT / 'doc' / 'answer-keys'
 EXTRACT_DIRECTORY = ROOT / '.cache' / 'extracted-questions'
 EXTRACT_DIRECTORY.mkdir(parents=True, exist_ok=True)
-QUIZ_YEARS = ['2025', '2024', '2023']
+QUIZ_YEARS = ['2025', '2024', '2023', '2022']
+EXAM_SESSIONS = {
+    year: ('A', 'October') if year == '2022' else ('S', 'April')
+    for year in QUIZ_YEARS
+}
 
 
 def normalize_whitespace(text):
@@ -19,14 +24,21 @@ def normalize_whitespace(text):
 
 
 def import_year(year):
-    key_file = next(ANSWER_KEY_DIRECTORY.glob(f'{year}S_IP_Answer*.pdf'))
+    session_code, _ = EXAM_SESSIONS[year]
+    key_file = next(ANSWER_KEY_DIRECTORY.glob(f'{year}{session_code}_IP_Answer*.pdf'))
     key_text = '\n'.join(page.extract_text() for page in PdfReader(key_file).pages)
     answers = {int(number): ord(answer) - 97 for number, answer in re.findall(r'\b(\d{1,3})\s+([a-d])\b', key_text)}
     assert set(answers) == set(range(1, 101)), (year, 'Incomplete answer key')
     image_dir = ROOT / 'questions' / year
     image_dir.mkdir(parents=True, exist_ok=True)
     questions = []
-    with pdfplumber.open(EXAM_PAPER_DIRECTORY / f'{year}S_IP_Questions.pdf') as pdf:
+    paper_filename = (
+        f'{year}{session_code}_IP_Question.pdf'
+        if year == '2022'
+        else f'{year}S_IP_Questions.pdf'
+    )
+    page_bottom = 740 if year == '2022' else 792
+    with pdfplumber.open(EXAM_PAPER_DIRECTORY / paper_filename) as pdf:
         headings = []
         for page_index, page in enumerate(pdf.pages[2:], 2):
             for word in page.extract_words():
@@ -36,10 +48,13 @@ def import_year(year):
         assert [heading[0] for heading in headings] == list(range(1, 101)), (year, headings)
         for question_index, (number, page_index, top) in enumerate(headings):
             next_head = headings[question_index + 1] if question_index < 99 else None
-            regions = [(page_index, top - 5, next_head[2] - 13 if next_head and next_head[1] == page_index else 792)]
+            end = page_bottom
+            if next_head and next_head[1] == page_index:
+                end = min(next_head[2] - 13, page_bottom)
+            regions = [(page_index, top - 5, end)]
             if next_head and next_head[1] > page_index:
                 for extra in range(page_index + 1, next_head[1] + 1):
-                    end = next_head[2] - 13 if extra == next_head[1] else 792
+                    end = min(next_head[2] - 13, page_bottom) if extra == next_head[1] else page_bottom
                     if end > 80:
                         regions.append((extra, 60, end))
             texts, images, graphic_count = [], [], 0
@@ -47,7 +62,11 @@ def import_year(year):
                 page = pdf.pages[page_index]
                 crop = page.crop((55, y0, 555, y1))
                 text = crop.extract_text() or ''
-                if not text.strip():
+                section_heading = re.fullmatch(
+                    r'Answer questions Q\d+ through Q\d+ concerning [^.]+\.',
+                    normalize_whitespace(text),
+                )
+                if not text.strip() or section_heading:
                     continue
                 texts.append(text)
                 graphic_count += sum(1 for obj in page.lines + page.rects + page.curves + page.images
@@ -75,13 +94,16 @@ def import_year(year):
             clean_choices = ordered and all(choice_text and '\ufffd' not in choice_text and '(cid:' not in choice_text for choice_text in choices)
             if not clean_choices:
                 choices = [f'Option {letter}' for letter in 'ABCD']
-            prefer_original = graphic_count > 0 or not clean_choices or '\ufffd' in question_text or '(cid:' in question_text
+            prefer_original = (
+                year == '2022' or graphic_count > 0 or not clean_choices
+                or '\ufffd' in question_text or '(cid:' in question_text
+            )
             questions.append({
                 'number': number,
                 'text': normalize_whitespace(question_text),
                 'choices': choices,
                 'answer': answers[number],
-                'source': f'({year}S, IP, Q{number})',
+                'source': f'({year}{session_code}, IP, Q{number})',
                 'images': images,
                 'originalText': raw_text,
                 'preferOriginal': prefer_original,
@@ -95,5 +117,12 @@ def import_year(year):
 
 
 if __name__ == '__main__':
-    bank = {year: {'year': year, 'session': f'April {year}', 'questions': import_year(year)} for year in QUIZ_YEARS}
-    (ROOT / 'data/source/paper-bank.json').write_text(json.dumps(bank, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
+    bank_path = ROOT / 'data/source/paper-bank.json'
+    bank = json.loads(bank_path.read_text(encoding='utf-8')) if bank_path.exists() else {}
+    for year in sys.argv[1:] or QUIZ_YEARS:
+        session_code, month = EXAM_SESSIONS[year]
+        bank[year] = {
+            'year': year, 'session': f'{month} {year}', 'sessionCode': session_code,
+            'questions': import_year(year),
+        }
+    bank_path.write_text(json.dumps(bank, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')

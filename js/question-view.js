@@ -1,6 +1,49 @@
 (function (app) {
   'use strict';
-  const { year, questions, state, elements, ANSWER_LETTERS } = app;
+  const { year, sessionCode, questions, state, elements, ANSWER_LETTERS } = app;
+  let imageTrigger = null;
+
+  function resetImageZoom() {
+    elements.imageViewer.classList.remove('is-zoomed');
+    elements.imageViewerZoom.setAttribute('aria-pressed', 'false');
+    elements.imageViewerZoom.textContent = 'Actual size';
+    elements.imageViewerScroll.scrollTo?.(0, 0);
+  }
+
+  function openImage(link, image, label) {
+    if (typeof elements.imageViewer.showModal !== 'function') return false;
+    imageTrigger = link;
+    resetImageZoom();
+    elements.imageViewerTitle.textContent = label;
+    elements.imageViewerImage.src = link.href;
+    elements.imageViewerImage.alt = image.alt;
+    elements.imageViewer.showModal();
+    document.documentElement.classList.add('image-viewer-open');
+    elements.imageViewerClose.focus();
+    return true;
+  }
+
+  elements.imageViewerClose.addEventListener('click', () => elements.imageViewer.close());
+  elements.imageViewerZoom.addEventListener('click', () => {
+    const zoomed = elements.imageViewer.classList.toggle('is-zoomed');
+    elements.imageViewerZoom.setAttribute('aria-pressed', String(zoomed));
+    elements.imageViewerZoom.textContent = zoomed ? 'Fit screen' : 'Actual size';
+    elements.imageViewerScroll.scrollTo?.(0, 0);
+  });
+  elements.imageViewer.addEventListener('click', (event) => {
+    if (event.target === elements.imageViewer) elements.imageViewer.close();
+  });
+  elements.imageViewer.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    elements.imageViewer.close();
+  });
+  elements.imageViewer.addEventListener('close', () => {
+    document.documentElement.classList.remove('image-viewer-open');
+    resetImageZoom();
+    if (imageTrigger?.isConnected) imageTrigger.focus({ preventScroll: true });
+    else elements.questionText.focus({ preventScroll: true });
+    imageTrigger = null;
+  });
 
   function renderQuestion() {
     const question = questions[state.current];
@@ -23,9 +66,13 @@
       );
       const image = document.createElement('img');
       image.src = `../${src}`;
-      image.alt = `Original ${year}S IP question ${question.number}${question.images.length > 1 ? `, part ${index + 1}` : ''}, including its diagrams and options`;
+      image.alt = `Original ${year}${sessionCode} IP question ${question.number}${question.images.length > 1 ? `, part ${index + 1}` : ''}, including its diagrams and options`;
       image.decoding = 'async';
       link.append(image);
+      link.addEventListener('click', (event) => {
+        const label = `Question ${question.number} image${question.images.length > 1 ? `, part ${index + 1}` : ''}`;
+        if (openImage(link, image, label)) event.preventDefault();
+      });
       elements.sourceImages.append(link);
     });
     elements.transcript.hidden = !question.preferOriginal;
