@@ -12,7 +12,7 @@ EXAM_PAPER_DIRECTORY = ROOT / 'doc' / 'exam-papers'
 ANSWER_KEY_DIRECTORY = ROOT / 'doc' / 'answer-keys'
 EXTRACT_DIRECTORY = ROOT / '.cache' / 'extracted-questions'
 EXTRACT_DIRECTORY.mkdir(parents=True, exist_ok=True)
-QUIZ_YEARS = ['2025', '2024', '2023', '2022']
+QUIZ_YEARS = ['2026', '2025', '2024', '2023', '2022']
 EXAM_SESSIONS = {
     year: ('A', 'October') if year == '2022' else ('S', 'April')
     for year in QUIZ_YEARS

@@ -25,7 +25,7 @@ Keep modules focused and preferably below 250 lines; shorter files are fine. Coh
 
 ## Testing Guidelines
 
-Tests use Node's strict assertions and jsdom. Name tests `tests/*.test.cjs` and add new test files to the `npm test` script. Cover changed behavior, including grading, navigation, saved progress, dark mode, and asset references. Preserve the checks for all 300 questions and deployment exclusions. No numeric coverage threshold is configured.
+Tests use Node's strict assertions and jsdom. Name tests `tests/*.test.cjs` and add new test files to the `npm test` script. Cover changed behavior, including grading, navigation, saved progress, dark mode, and asset references. Preserve the checks for all 500 questions and deployment exclusions. No numeric coverage threshold is configured.
 
 ## Commit & Pull Request Guidelines
 

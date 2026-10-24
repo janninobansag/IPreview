@@ -115,7 +115,7 @@ function createWorker(scope, failDownload = false) {
       expected.sort(),
       'Every deployed asset must be cached',
     );
-    assert.equal([...cache.keys()].filter((url) => url.endsWith('.webp')).length, 154);
+    assert.equal([...cache.keys()].filter((url) => url.endsWith('.webp')).length, 173);
     const old = 'ipreview:' + scope + ':old';
     worker.stores.set(old, new Map());
     worker.stores.set('another-app', new Map());

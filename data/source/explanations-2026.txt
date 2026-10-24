@@ -1,0 +1,100 @@
+An improvement of $20,000 is not less than $10,000 (N), while three days is less than one week (Y). The N/Y column of the decision table awards $100.
+The output is 1 only when both inputs are 1, which is the AND operation.
+There are five choices for chairperson and independently five for secretary because one person may hold both roles: 5 × 5 = 25.
+155 = 128 + 16 + 8 + 2 + 1, so the bits from 128 through 1 are 10011011.
+From the top, 4 + 3 becomes 7; add a new 3, then average 3, 7, and 2 to get 4. The final absolute difference |4 - 2| is 2, leaving 2 above 1 as in the second diagram.
+Save A in TMP, copy B into A, then copy TMP into B. Saving A first prevents its original value from being lost.
+From state 1, 11 mod 3 = 2, so move two states clockwise to 3. Then 33 mod 3 = 0, so move one state clockwise to 4.
+Reject amounts with amount mod 1000 ≠ 0. After taking the 10,000 notes, divide the remainder amount mod 10000 by 1000 for the 1,000 notes.
+A position is on the border when its row is 1 or n, or its column is 1 or n; the OR expression covers all four edges.
+A device driver lets the operating system or application communicate with and control a particular hardware device.
+Frequently accessed data can be served from the faster cache, reducing the effective average time to access main memory.
+A GPU is designed for graphics processing; a separate high-performance GPU board can handle more demanding graphics work.
+Deep learning uses layered neural networks to learn patterns from data.
+Parallel processing divides work into parts that can run simultaneously on multiple processors.
+Mirrored disks keep data available after a disk failure, and redundant power such as a UPS can keep the system operating during a power disruption. Reducing maintenance or merely bundling network lines does not provide the stated fault tolerance.
+100 mAh is a charge capacity equivalent, ideally, to supplying 100 mA for one hour; actual run time depends on operating conditions.
+Compare the modified file with a saved copy to identify precisely which records or values changed.
+Multitasking switches a single PC among applications so a download and spreadsheet work can progress concurrently.
+Function keys such as F1–F12 have actions assigned by the operating system or current application.
+From d1, '..' goes up to the root; then 'd2/f2.html' goes down to the target, giving ../d2/f2.html.
+Secure boot verifies signed firmware and operating-system components during startup before allowing them to run.
+OSS may be sold when its license permits. Public source code alone is not sufficient to make software open source, and copyright is not automatically waived.
+A 3D printer builds a physical three-dimensional object from 3D model data.
+Augmented reality overlays computer-generated information onto a live view of the real environment.
+Red, green, and blue light mixed equally at full intensity form white by additive color mixing.
+Normalization separates related data to reduce repeated values and update inconsistencies in a relational database.
+A table can contain several foreign keys, each referring to a key in another table; foreign-key values need not themselves be unique.
+Each publishing company contracts with many authors, while each author has one publisher; each author writes many books, while each book has one author. The first E-R diagram shows these two one-to-many relationships.
+Commit makes a successfully completed transaction's database updates final; rollback would undo an unsuccessful transaction.
+A router forwards packets between networks and selects a suitable route toward their destinations.
+Online storage capacity is provided by the remote service. Adding storage to a local computer does not automatically increase the online allocation.
+LPWA is designed for long-range, low-power wireless communication suitable for many IoT devices.
+TCP/IP provides the underlying networking functions used by application protocols such as FTP, POP, and SMTP.
+Cc addresses are visible to Bcc recipients, so Mr. D can see Mr. C. Bcc recipients are hidden from the other recipients, including one another.
+A digital signature can authenticate the sender and reveal tampering, but confidentiality requires encryption rather than a signature alone.
+A vulnerability is a weakness in an information asset; a threat can exploit it, creating risk of damage.
+Locking an ID after repeated wrong passwords limits repeated guesses in a brute-force attack.
+A one-time password is generated for a particular login and changes for subsequent authentications.
+Spyware secretly gathers information such as personal details or browsing history from a user's device.
+A personal firewall filters unwanted network connections to a PC directly connected to the Internet.
+Single sign-on lets a user access several services after one authentication, reducing repeated logins.
+The entered digits change when the matrix is regenerated, so a captured old password alone is not enough to impersonate the user. The memorized positions must still be kept secret.
+WPA2 is a wireless LAN security standard used to protect Wi-Fi communications.
+A VPN creates a private-network-like connection over a public network. It does not itself remove the need for access points or automatically inspect endpoint security.
+DNS cache poisoning changes the domain-to-IP mapping, sending a user who entered the correct URL to an attacker-controlled site.
+Ease of learning, button layout, and readable text size and color affect screen usability; repair time concerns system maintainability.
+In an acceptance test, the ordering user checks whether the delivered system meets their requirements.
+A migration plan should specify the period and schedule when the old and new systems will run in parallel.
+Changing an operating program to comply with a revised law is maintenance of an existing system.
+Refactoring improves a program's internal structure while preserving its externally visible behavior.
+A project has a defined objective and limited duration, unlike ongoing routine operations.
+Finishing parallel programming tasks earlier when it also lowers overall cost exploits a positive scheduling opportunity; the other measures respond to threats.
+Originally, 36 ÷ 6 = 6 weeks at 300 thousand yen, or 1,800 thousand. Together they make 6 + 3 = 9 programs per week, so four weeks cost 4 × (300 + 200) = 2,000 thousand: an increase of 200 thousand yen.
+Progress management checks how a delayed activity affects the overall schedule and completion date.
+A master schedule summarizes the main deliverables and activities across the whole project.
+A WBS breaks project deliverables and work into manageable components, providing a basis for effort and person-day estimates.
+Stakeholders include everyone who can affect or be affected by the project: the customer executives and users, the vendor manager, and the technical-support partner.
+An SLA records the service levels agreed between the customer and the outsourced service provider.
+A chatbot can answer routine user queries quickly, making it useful for incident reporting and initial incident-management responses.
+Surge-protection devices limit voltage spikes caused by lightning; a UPS primarily supplies backup power during interruptions.
+Escalation sends a difficult incident from the service desk to a more specialized support level.
+Recording inquiries, responses, and response times gives the service desk evidence to analyze and improve its service.
+IT governance is the organization's direction and control of IT strategy so IT supports business goals and value.
+Auditors must be independent of the subject they audit to make objective judgments; particular technical or business expertise can be shared across the team.
+Internal control includes legal and social-norm compliance and applies to unlisted as well as listed companies, so A and C are correct.
+In PDCA, Check measures actual operations against KPIs and evaluates the results.
+Run C, then A, then B. X finishes them at 6, 14, and 24 minutes; Y runs C from 6–14, A from 14–24, and B from 24–29, giving the shortest listed completion time.
+ROE means return on equity: the E is shareholders' equity.
+A BCP prioritizes critical work and names an alternate office to take over head-office functions so business can continue after a disaster.
+HR Tech applies technologies such as AI and IoT to recruitment, personnel evaluation, and other human-resources work.
+ABC analysis ranks items by a measure such as total sales and divides them into three priority groups. The second option is mislabelled 'd)' in the printed paper; it corresponds to answer B in the official key.
+Net income equals 8,000 - 6,000 - SG&A + 150 - 50 + 60 - 10 - 350. Setting this to 800 gives SG&A = 1,000 million yen.
+Viewing materials on screens instead of printing them reduces paper use and fits Green IT's environmental aim.
+An NDA obliges the parties to keep confidential information learned during their work secret.
+Outside directors add independent oversight of management decisions and strengthen corporate governance.
+ISO 9001 concerns quality-management systems; adopting it can standardize quality processes and improve management effectiveness.
+Training employees on laws and rules they must follow is a direct compliance activity.
+ISO/IEC 27001 standardizes requirements for an information security management system (ISMS).
+Value engineering seeks greater value by improving function or quality relative to cost.
+Company A scores 10 + 40 + 18 + 2x = 68 + 2x. Company B scores 79 and C scores 83, so A needs more than 83: the smallest integer x is 8.
+The balanced scorecard translates strategy into targets and measures across finance, customers, internal processes, and learning and growth.
+Benchmarking measures an organization's products or services against strong competitors or best performers to identify improvements.
+UX is the feelings and responses people have before, during, or after using a product, system, or service.
+SCM shares production, inventory, and sales information across the supply chain to reduce inventory and better meet customer demand.
+Innovation can mean a major new business model or technological change.
+Traceability lets an item be followed through its history, such as identifying production and sales stages from a food-product label.
+POS sales data shows what each store sells, helping it choose merchandise and manage ordering and inventory.
+CAD is computer-aided design: computers support design and drafting work.
+Concurrent engineering overlaps planning, design, production, and related work to shorten the overall product-development time.
+Just-in-time production orders components for when they are needed, keeping work-in-process inventory low.
+The system recognizes spoken questions and then interprets their meaning to produce a relevant answer, combining speech recognition with natural-language processing.
+Fintech combines financial services with newer digital and Internet technologies to create innovative services.
+Information-systems strategy must align with business strategy so technology supports the organization's goals.
+The second diagram shows data flows entering and leaving processes and a data store, which are the basic parts of a data-flow diagram (DFD).
+Gamification uses elements such as points and badges to motivate customers or employees toward desired goals.
+Gap analysis compares the current state with a desired future state to reveal what must change.
+An RFP is the request for proposal sent to vendors describing the proposed system and procurement conditions.
+IoT connects sensor-equipped devices or control units to the Internet to exchange data.
+The UN Sustainable Development Goals (SDGs) comprise 17 goals for a sustainable world.
+The annual benefit is 1 million yen of saved operating cost plus 2 million yen of new profit, or 3 million yen. Payback is 10 ÷ 3 = 3.3 years to one decimal place.
