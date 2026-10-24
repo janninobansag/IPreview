@@ -2,7 +2,7 @@
   "id": "./",
   "name": "IPreview — ITPEC Practice",
   "short_name": "IPreview",
-  "description": "Practice 400 ITPEC IT Passport questions with explanations and offline access.",
+  "description": "Practice 500 ITPEC IT Passport questions with explanations and offline access.",
   "lang": "en",
   "start_url": "./html/index.html",
   "scope": "./",

@@ -40,7 +40,13 @@ const doc = first.window.document;
 const menuLinks = [...doc.querySelectorAll('#quiz-menu-panel a')];
 assert.deepEqual(
   menuLinks.map((a) => a.textContent),
-  ['2025 practice quiz', '2024 practice quiz', '2023 practice quiz', '2022 practice quiz'],
+  [
+    '2026 practice quiz',
+    '2025 practice quiz',
+    '2024 practice quiz',
+    '2023 practice quiz',
+    '2022 practice quiz',
+  ],
 );
 assert.equal(menuLinks.filter((a) => a.getAttribute('aria-current') === 'page').length, 1);
 doc.querySelector('#quiz-menu-toggle').click();
@@ -89,7 +95,17 @@ assert.equal(
   autumn.window.localStorage.getItem('itpec-ip-2025S-progress-v1'),
   shared['itpec-ip-2025S-progress-v1'],
 );
-for (const dom of [first, restored, anotherYear, autumn]) dom.window.close();
+const newest = page('2026', shared);
+assert.equal(newest.window.document.querySelector('#answered-count').textContent, '0 answered');
+clickAnswer(newest, 1);
+assert.ok(newest.window.localStorage.getItem('itpec-ip-2026S-progress-v1'));
+assert.equal(
+  newest.window.localStorage.getItem('itpec-ip-2025S-progress-v1'),
+  shared['itpec-ip-2025S-progress-v1'],
+);
+const home = page('index');
+assert.equal(home.window.document.body.dataset.quizYear, '2026');
+for (const dom of [first, restored, anotherYear, autumn, newest, home]) dom.window.close();
 console.log(
   'Menu, correct/wrong/skipped map states, inline feedback, persistence, year isolation and dark mode passed.',
 );
@@ -112,7 +128,7 @@ assert.equal(withoutStorage.window.document.documentElement.dataset.theme, 'dark
 withoutStorage.window.close();
 console.log('Corrupted saved data and disabled browser storage are handled.');
 
-for (const year of ['2025', '2024', '2023', '2022']) {
+for (const year of ['2026', '2025', '2024', '2023', '2022']) {
   const dom = page(year);
   const qs = dom.window.ITPEC_QUIZZES[year].questions;
   const document = dom.window.document;

@@ -43,8 +43,8 @@
         ? 'Offline setup could not finish. Connect to the internet and try again.'
         : offlineReady
           ? navigator.onLine
-            ? 'Ready offline · All 400 questions and diagrams are saved on this device.'
-            : 'Offline · All four quizzes are available. Your answers still save on this device.'
+            ? 'Ready offline · All 500 questions and diagrams are saved on this device.'
+            : 'Offline · All five quizzes are available. Your answers still save on this device.'
           : 'Saving quizzes for offline use… Keep this page open until ready.');
     status.dataset.ready = String(offlineReady);
   }

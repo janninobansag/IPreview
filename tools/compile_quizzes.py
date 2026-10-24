@@ -62,7 +62,7 @@ def compile_quizzes():
             render_quiz_page(template, year, quiz), encoding="utf-8", newline="\n"
         )
     (PAGE_DIRECTORY / "index.html").write_text(
-        render_quiz_page(template, "2025", bank["2025"]), encoding="utf-8", newline="\n"
+        render_quiz_page(template, "2026", bank["2026"]), encoding="utf-8", newline="\n"
     )
     print(f"Compiled {len(bank)} question banks and {len(bank) + 1} quiz pages.")
 

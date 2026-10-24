@@ -1,7 +1,7 @@
 # IPreview
 
-ITPEC IT Passport practice quizzes with 100 questions each for April 2025,
-April 2024, April 2023, and October 2022. The root home page opens the 2025 quiz.
+ITPEC IT Passport practice quizzes with 100 questions each for April 2026,
+April 2025, April 2024, April 2023, and October 2022. The root home page opens the 2026 quiz.
 
 ## Portfolio preview
 
@@ -17,14 +17,13 @@ Click a link below to open the PDF on GitHub.
 
 | Exam session | Questions                                                | Answers                                            |
 | ------------ | -------------------------------------------------------- | -------------------------------------------------- |
+| 2026 Spring  | [Question paper](doc/exam-papers/2026S_IP_Questions.pdf) | [Answer key](doc/answer-keys/2026S_IP_Answers.pdf) |
 | 2025 Spring  | [Question paper](doc/exam-papers/2025S_IP_Questions.pdf) | [Answer key](doc/answer-keys/2025S_IP_Answers.pdf) |
 | 2024 Autumn  | [Question paper](doc/exam-papers/2024A_IP_Questions.pdf) | —                                                  |
 | 2024 Spring  | [Question paper](doc/exam-papers/2024S_IP_Questions.pdf) | [Answer key](doc/answer-keys/2024S_IP_Answer.pdf)  |
 | 2023 Autumn  | [Question paper](doc/exam-papers/2023A_IP_Questions.pdf) | —                                                  |
 | 2023 Spring  | [Question paper](doc/exam-papers/2023S_IP_Questions.pdf) | [Answer key](doc/answer-keys/2023S_IP_Answer.pdf)  |
 | 2022 Autumn  | [Question paper](doc/exam-papers/2022A_IP_Question.pdf)  | [Answer key](doc/answer-keys/2022A_IP_Answer.pdf)  |
-
-Additional reference: [2026 Spring answers PDF](doc/exam-papers/2026S_IP_Answers.pdf).
 
 ## Develop
 
@@ -69,7 +68,7 @@ Open the deployed HTTPS website, then select the download icon in the navbar.
 Use **Install app** when offered. On iPhone or iPad, open the site in Safari and
 choose **Share → Add to Home Screen**.
 
-Stay online until the status reads **Ready offline**. All four quizzes, all 400
+Stay online until the status reads **Ready offline**. All five quizzes, all 500
 questions, explanations and diagrams are then saved on that device, including
 years you have not opened yet. You can close the app, disconnect and reopen it
 to study, grade answers and keep your progress. External reference websites and
